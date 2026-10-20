@@ -1,0 +1,138 @@
+{
+ "component": "WaasShowJobsPage",
+ "props": {
+  "currentUser": null,
+  "company": {
+   "id": 26882,
+   "slug": "coris",
+   "name": "Coris",
+   "batch_name": "S22",
+   "small_logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/f8d68f694a6b7f9bb0fb7015ac9814c591f45f5d.png",
+   "one_liner": "AI risk and ops platform for Payment Processors, Banks, SaaS…",
+   "website": "https://coris.ai/",
+   "long_description": "Coris is the AI platform for payments risk and operations. We work with the most ambitious companies around the globe such as GoFundMe, Kajabi, Clio and Cherry to automate merchant onboarding, monitoring, and payment operations. What risk teams only imagined two years ago, Coris is delivering today with our risk platform and AI agents.\r\n\r\nWe’re backed by Y Combinator, Lux Capital, Pathlight Ventures, and other world-class investors — and we’re just getting started !",
+   "tags": [
+    "Fintech",
+    "B2B",
+    "Compliance",
+    "AI"
+   ],
+   "ycdc_status": "Active",
+   "logo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/logos/20dd56169c1c18ad260828f2ab6c7e8ec20d0e2a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAGSZDKMWP%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T120813Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJHMEUCIQCigSqFgoPvw5uhR70ZMjYTc1GjPvLhEfmNRwpgI8S6GAIgYV28N6NANheYppH5%2B3opaehjWYAtXkiMS8iRmEAU6A8q5QMILBAAGgwwMDYyMDE4MTEwNzIiDITuB15g%2B7MwZhXl4SrCA5Ewm%2FdD4gDDNGSKy1Mi4E%2FarJ%2Fa6vnuQ9nup8gHElDbQxfefIaErYBPJWjvTg%2FTcU%2FX9Ebd3DmCsM2cUuZyYcRX%2BW8u4y7rZVP3pZIdK0JqO3dlYHiEGHm0j62l0zldz9JFeudB0rXe3AXbS%2Ba4JTfa5zdrMN48r%2FshOuZ5QsOtWMdXO1dzUsRm0Nc4tvkrESKFPLQloLuY0v2V0MCyAPNti5bOigqq2HqrkB7fAnz3HXeyJd7Wi8UD36F0Oh4gIPmw%2FKEB7BwlAeMZXlgokjLtce0HNH%2BBUTZrwrpcsqh8ZdDIvLU6hSrC7GdwhP6xsoHbzl90%2FjFh3%2BEscLZ4lPlxB4fV8Xhuf%2BCxOCmG%2F0BjUGSoPKWyNDXOJPjJX4i2P4uSRd%2B8BEf%2FFr9ZK2nbqVPTKXq3zmEomQBw1xe1if8aJPNFEsOVRxAfqX4sbD9t5bXr5nvKAiBNMC%2FX0XHBm1%2FZUOMy099mMs4xSAC3N8LysWBhbGRotfdkgE5asCn9LEoWEb02IG6HXlZ1fGgg3Boq4MG%2BK4t%2BOsewReVtIP4GQ8Ez74qvfNd%2B6Ud3zIMv%2FkRl9ixPuvmhRZxenyeGMS9lIjDG59fWBjqlAfsA0Eoib%2FvBCNAzDkPT3XxF0wKoLMOMQTFGwrc7FkC1%2BJWzqGOsKDuYqGQozfRDfZkcloWGFYFJep2OLO0KD%2F1tvkZysOHNYSRGD%2FjuocyDuUejhmb0Mr68TSWAW4aEA9jYh2H08z%2FpgeTBcSSfaHXmDNJWI6mldHt%2BdMbKL2SvvjunjoAftYt5r5FV%2B4rx%2Bng0UqF35t1KotCYRv89oGlOjabLPA%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=b27862ce5abe93909dc5528d59b1b7a17883cf7694a5b43a5feb1d69fea9c2eb",
+   "year_founded": 2022,
+   "team_size": 10,
+   "location": "San Francisco",
+   "country": "US",
+   "linkedin_url": "https://www.linkedin.com/company/corisinc/",
+   "twitter_url": "https://twitter.com/CorisInc",
+   "fb_url": "",
+   "cb_url": "",
+   "show_founder_contact": true,
+   "hiring_description": "Coris is building the AI layer for payments risk and operations. We work with the most ambitious platforms, marketplaces, and payment providers around the globe such as GoFundMe, Kajabi, Clio and Cherry to automate and accelerate merchant onboarding, monitoring, and decision-making. What risk teams only imagined two years ago, Coris is delivering today with our risk platform and AI agents.\r\n\r\nWe’re backed by Y Combinator, Lux Capital, Pathlight Ventures, and other world-class investors.",
+   "founders": [
+    {
+     "user_id": 982526,
+     "is_active": true,
+     "founder_bio": "ex-WePay, ex-eBay",
+     "full_name": "Shyam Maddali",
+     "title": null,
+     "avatar_thumb_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/4716428289cef5c1212db1017901c9efa78c039f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAGSZDKMWP%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T120813Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJHMEUCIQCigSqFgoPvw5uhR70ZMjYTc1GjPvLhEfmNRwpgI8S6GAIgYV28N6NANheYppH5%2B3opaehjWYAtXkiMS8iRmEAU6A8q5QMILBAAGgwwMDYyMDE4MTEwNzIiDITuB15g%2B7MwZhXl4SrCA5Ewm%2FdD4gDDNGSKy1Mi4E%2FarJ%2Fa6vnuQ9nup8gHElDbQxfefIaErYBPJWjvTg%2FTcU%2FX9Ebd3DmCsM2cUuZyYcRX%2BW8u4y7rZVP3pZIdK0JqO3dlYHiEGHm0j62l0zldz9JFeudB0rXe3AXbS%2Ba4JTfa5zdrMN48r%2FshOuZ5QsOtWMdXO1dzUsRm0Nc4tvkrESKFPLQloLuY0v2V0MCyAPNti5bOigqq2HqrkB7fAnz3HXeyJd7Wi8UD36F0Oh4gIPmw%2FKEB7BwlAeMZXlgokjLtce0HNH%2BBUTZrwrpcsqh8ZdDIvLU6hSrC7GdwhP6xsoHbzl90%2FjFh3%2BEscLZ4lPlxB4fV8Xhuf%2BCxOCmG%2F0BjUGSoPKWyNDXOJPjJX4i2P4uSRd%2B8BEf%2FFr9ZK2nbqVPTKXq3zmEomQBw1xe1if8aJPNFEsOVRxAfqX4sbD9t5bXr5nvKAiBNMC%2FX0XHBm1%2FZUOMy099mMs4xSAC3N8LysWBhbGRotfdkgE5asCn9LEoWEb02IG6HXlZ1fGgg3Boq4MG%2BK4t%2BOsewReVtIP4GQ8Ez74qvfNd%2B6Ud3zIMv%2FkRl9ixPuvmhRZxenyeGMS9lIjDG59fWBjqlAfsA0Eoib%2FvBCNAzDkPT3XxF0wKoLMOMQTFGwrc7FkC1%2BJWzqGOsKDuYqGQozfRDfZkcloWGFYFJep2OLO0KD%2F1tvkZysOHNYSRGD%2FjuocyDuUejhmb0Mr68TSWAW4aEA9jYh2H08z%2FpgeTBcSSfaHXmDNJWI6mldHt%2BdMbKL2SvvjunjoAftYt5r5FV%2B4rx%2Bng0UqF35t1KotCYRv89oGlOjabLPA%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=77f27a3ae8277971d78c3524ccc4932a8b0318b5663ab8e0502dfa485160f878",
+     "twitter_url": "https://twitter.com/mlshyam",
+     "linkedin_url": "https://www.linkedin.com/in/shyammaddali/",
+     "latest_yc_company": {
+      "name": "Coris",
+      "href": "/companies/coris"
+     }
+    },
+    {
+     "user_id": 808733,
+     "is_active": true,
+     "founder_bio": "Payments Fraud, SMB, Risk & Compliance. Prev: Google, WePay, Paysafe, PayPal, Accenture",
+     "full_name": "Vinodh Poyyapakkam",
+     "title": null,
+     "avatar_thumb_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/92775bbd1f7783cd2ef5767994ce17309a74124e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAGSZDKMWP%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T120813Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJHMEUCIQCigSqFgoPvw5uhR70ZMjYTc1GjPvLhEfmNRwpgI8S6GAIgYV28N6NANheYppH5%2B3opaehjWYAtXkiMS8iRmEAU6A8q5QMILBAAGgwwMDYyMDE4MTEwNzIiDITuB15g%2B7MwZhXl4SrCA5Ewm%2FdD4gDDNGSKy1Mi4E%2FarJ%2Fa6vnuQ9nup8gHElDbQxfefIaErYBPJWjvTg%2FTcU%2FX9Ebd3DmCsM2cUuZyYcRX%2BW8u4y7rZVP3pZIdK0JqO3dlYHiEGHm0j62l0zldz9JFeudB0rXe3AXbS%2Ba4JTfa5zdrMN48r%2FshOuZ5QsOtWMdXO1dzUsRm0Nc4tvkrESKFPLQloLuY0v2V0MCyAPNti5bOigqq2HqrkB7fAnz3HXeyJd7Wi8UD36F0Oh4gIPmw%2FKEB7BwlAeMZXlgokjLtce0HNH%2BBUTZrwrpcsqh8ZdDIvLU6hSrC7GdwhP6xsoHbzl90%2FjFh3%2BEscLZ4lPlxB4fV8Xhuf%2BCxOCmG%2F0BjUGSoPKWyNDXOJPjJX4i2P4uSRd%2B8BEf%2FFr9ZK2nbqVPTKXq3zmEomQBw1xe1if8aJPNFEsOVRxAfqX4sbD9t5bXr5nvKAiBNMC%2FX0XHBm1%2FZUOMy099mMs4xSAC3N8LysWBhbGRotfdkgE5asCn9LEoWEb02IG6HXlZ1fGgg3Boq4MG%2BK4t%2BOsewReVtIP4GQ8Ez74qvfNd%2B6Ud3zIMv%2FkRl9ixPuvmhRZxenyeGMS9lIjDG59fWBjqlAfsA0Eoib%2FvBCNAzDkPT3XxF0wKoLMOMQTFGwrc7FkC1%2BJWzqGOsKDuYqGQozfRDfZkcloWGFYFJep2OLO0KD%2F1tvkZysOHNYSRGD%2FjuocyDuUejhmb0Mr68TSWAW4aEA9jYh2H08z%2FpgeTBcSSfaHXmDNJWI6mldHt%2BdMbKL2SvvjunjoAftYt5r5FV%2B4rx%2Bng0UqF35t1KotCYRv89oGlOjabLPA%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=a6f6bb5f747668d0bfbefccbd8be81f732d66c931f11e754e82ec21cd2029c96",
+     "twitter_url": "https://twitter.com/psvinodh",
+     "linkedin_url": "https://www.linkedin.com/in/vinodhpo/",
+     "latest_yc_company": {
+      "name": "Coris",
+      "href": "/companies/coris"
+     }
+    }
+   ]
+  },
+  "jobPostings": [
+   {
+    "id": 116108,
+    "title": "Backend Engineer (AI-Native) — Risk Infrastructure & Integrations",
+    "url": "/companies/coris/jobs/h0nDly8-backend-engineer-ai-native-risk-infrastructure-integrations",
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D116108&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=26882",
+    "location": "Palo Alto, CA, US",
+    "askUs": true,
+    "type": "Full-time",
+    "role": "eng",
+    "roleSpecificType": "Backend",
+    "prettyRole": "Engineering",
+    "salaryRange": "$160 - $175",
+    "equityRange": "0.25% - 0.50%",
+    "minExperience": "3+ years",
+    "minSchoolYear": null,
+    "visa": "US citizen/visa only",
+    "skills": [
+     "Django",
+     "JavaScript",
+     "PostgreSQL",
+     "Python",
+     "TypeScript"
+    ],
+    "isIncomplete": false,
+    "companyUrl": "/companies/coris",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/f8d68f694a6b7f9bb0fb7015ac9814c591f45f5d.png",
+    "companyName": "Coris",
+    "companyBatchName": "S22",
+    "companyOneLiner": "AI risk and ops platform for Payment Processors, Banks, SaaS…",
+    "hiringManager": null,
+    "createdAt": "7 days",
+    "lastActive": "3 days"
+   },
+   {
+    "id": 100286,
+    "title": "Chief of Staff",
+    "url": "/companies/coris/jobs/I26T5Uv-chief-of-staff",
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D100286&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=26882",
+    "location": "Palo Alto, CA, US",
+    "askUs": true,
+    "type": "Full-time",
+    "role": "operations",
+    "roleSpecificType": null,
+    "prettyRole": "Operations",
+    "salaryRange": "$120K - $150K",
+    "equityRange": "0.40% - 0.70%",
+    "minExperience": "3+ years",
+    "minSchoolYear": null,
+    "visa": "US citizen/visa only",
+    "skills": [
+     "AI Agents"
+    ],
+    "isIncomplete": false,
+    "companyUrl": "/companies/coris",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/f8d68f694a6b7f9bb0fb7015ac9814c591f45f5d.png",
+    "companyName": "Coris",
+    "companyBatchName": "S22",
+    "companyOneLiner": "AI risk and ops platform for Payment Processors, Banks, SaaS…",
+    "hiringManager": null,
+    "createdAt": "3 months",
+    "lastActive": "22 days"
+   }
+  ],
+  "jobsUrl": "https://bookface.ycombinator.com/workatastartup",
+  "testimonials": [],
+  "testimonialInviteUrl": "https://bookface.ycombinator.com/company/reviews",
+  "signupUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=26882",
+  "companyUrl": "https://www.ycombinator.com/companies/coris",
+  "createProfileUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication&defaults%5BsignUpActive%5D=true",
+  "signedIn": false,
+  "relatedJobs": null,
+  "showDirectApply": true,
+  "waasDirectoryUrl": "https://www.workatastartup.com/companies"
+ }
+}

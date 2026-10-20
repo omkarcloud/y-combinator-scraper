@@ -1,0 +1,263 @@
+{
+ "component": "WaasJobListingsPage",
+ "props": {
+  "debugInfo": null,
+  "createProfileUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication&defaults%5BsignUpActive%5D=true",
+  "sidebarTitle": "Other roles in San Francisco",
+  "sidebarLinks": [
+   [
+    "Product Manager",
+    "/jobs/role/product-manager/san-francisco"
+   ],
+   [
+    "Design",
+    "/jobs/role/designer/san-francisco"
+   ],
+   [
+    "Recruiting & HR",
+    "/jobs/role/recruiting-hr/san-francisco"
+   ],
+   [
+    "Sales",
+    "/jobs/role/sales-manager/san-francisco"
+   ],
+   [
+    "Marketing",
+    "/jobs/role/marketing/san-francisco"
+   ],
+   [
+    "Operations",
+    "/jobs/role/operations/san-francisco"
+   ],
+   [
+    "Science",
+    "/jobs/role/science/san-francisco"
+   ]
+  ],
+  "title": "Software Engineer jobs at Y Combinator startups in San Francisco",
+  "subtitle": "San Francisco startup jobs",
+  "description": "San Francisco and the Bay Area have been the birthplace of YC companies like Dropbox, Airbnb, Stripe. There are hundreds more YC startups on a trajectory of similar growth, and hiring software engineers at Y Combinator.",
+  "location": {
+   "id": 1,
+   "place_id": "ChIJIQBpAG2ahYAR_6128GcTUEo",
+   "name": "San Francisco",
+   "byline": "San Francisco and the Bay Area have been the birthplace of YC companies like Dropbox, Airbnb, Stripe. There are hundreds more YC startups on a trajectory of similar growth, and hiring ${role_name} at Y Combinator.",
+   "most_active_only": true,
+   "coordinates": [
+    37.77493,
+    -122.419416
+   ],
+   "slug": "san-francisco"
+  },
+  "jobCategory": "eng",
+  "jobPostings": [
+   {
+    "id": 85705,
+    "title": "Senior Software Engineer",
+    "url": "/companies/cofactr/jobs/lMWwjMv-senior-software-engineer",
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D85705&defaults%5BsignUpActive%5D=true",
+    "location": "New York, NY, US / Remote (US)",
+    "askUs": true,
+    "type": "Full-time",
+    "role": "eng",
+    "roleSpecificType": "Full stack",
+    "prettyRole": "Engineering",
+    "salaryRange": "$180K - $210K",
+    "equityRange": "",
+    "minExperience": "3+ years",
+    "minSchoolYear": null,
+    "visa": "US citizen/visa only",
+    "skills": [],
+    "isIncomplete": false,
+    "companyUrl": "/companies/cofactr",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/39a586314e7bd62c08d22961d04f803a003c805f.png",
+    "companyName": "Cofactr",
+    "companyBatchName": "W22",
+    "companyOneLiner": "Cloud pre-factory logistics and procurement for electronics",
+    "hiringManager": null,
+    "createdAt": "11 months",
+    "lastActive": "13 days",
+    "ctaText": "Apply",
+    "ctaUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D85705&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=26147"
+   },
+   {
+    "id": 100517,
+    "title": "Senior Engineer",
+    "url": "/companies/kivo-health/jobs/2dlgyZO-senior-engineer",
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D100517&defaults%5BsignUpActive%5D=true",
+    "location": "Seattle",
+    "askUs": true,
+    "type": "Full-time",
+    "role": "eng",
+    "roleSpecificType": "Full stack",
+    "prettyRole": "Engineering",
+    "salaryRange": "$200K - $260K",
+    "equityRange": "0.15% - 0.25%",
+    "minExperience": "6+ years",
+    "minSchoolYear": null,
+    "visa": "US citizen/visa only",
+    "skills": [
+     "Python"
+    ],
+    "isIncomplete": false,
+    "companyUrl": "/companies/kivo-health",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/ee15c21c618dfd0aa1cbb6bb3be671ac26a2be94.png",
+    "companyName": "Kivo Health",
+    "companyBatchName": "W23",
+    "companyOneLiner": "AI-powered care for seniors with chronic disease",
+    "hiringManager": null,
+    "createdAt": "3 months",
+    "lastActive": "10 days",
+    "ctaText": "Apply",
+    "ctaUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D100517&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=27858"
+   },
+   {
+    "id": 113110,
+    "title": "AI Engineer",
+    "url": "/companies/bluecargo/jobs/QYYIKhR-ai-engineer",
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D113110&defaults%5BsignUpActive%5D=true",
+    "location": "Los Angeles, CA, US / Remote (US)",
+    "askUs": true,
+    "type": "Full-time",
+    "role": "eng",
+    "roleSpecificType": "AI engineer",
+    "prettyRole": "Engineering",
+    "salaryRange": "$130K - $190K",
+    "equityRange": "",
+    "minExperience": "6+ years",
+    "minSchoolYear": null,
+    "visa": "US citizen/visa only",
+    "skills": [
+     "AI Agents"
+    ],
+    "isIncomplete": false,
+    "companyUrl": "/companies/bluecargo",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/96b73225a7fdc8841c526bb16e3bc4cb32073599.png",
+    "companyName": "BlueCargo",
+    "companyBatchName": "S18",
+    "companyOneLiner": "The automated solution for complex freight transactions.",
+    "hiringManager": null,
+    "createdAt": "19 days",
+    "lastActive": "5 days",
+    "ctaText": "Apply",
+    "ctaUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D113110&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=1969"
+   }
+  ],
+  "jobLocations": [
+   {
+    "slug": "san-francisco",
+    "name": "San Francisco"
+   },
+   {
+    "slug": "new-york",
+    "name": "New York"
+   },
+   {
+    "slug": "los-angeles",
+    "name": "Los Angeles"
+   },
+   {
+    "slug": "seattle",
+    "name": "Seattle"
+   },
+   {
+    "slug": "austin",
+    "name": "Austin"
+   },
+   {
+    "slug": "chicago",
+    "name": "Chicago"
+   },
+   {
+    "slug": "india",
+    "name": "India"
+   }
+  ],
+  "jobRoles": [
+   {
+    "slug": "software-engineer",
+    "name": "Software Engineer"
+   },
+   {
+    "slug": "designer",
+    "name": "Design & UI/UX"
+   },
+   {
+    "slug": "product-manager",
+    "name": "Product Manager"
+   },
+   {
+    "slug": "recruiting-hr",
+    "name": "Recruiting & HR"
+   },
+   {
+    "slug": "sales-manager",
+    "name": "Sales"
+   },
+   {
+    "slug": "marketing",
+    "name": "Marketing"
+   },
+   {
+    "slug": "support",
+    "name": "Support & Success"
+   },
+   {
+    "slug": "operations",
+    "name": "Operations"
+   },
+   {
+    "slug": "science",
+    "name": "Science"
+   }
+  ],
+  "formUrl": "/prospects",
+  "roleOptions": [
+   {
+    "value": "eng",
+    "label": "Engineering"
+   },
+   {
+    "value": "design",
+    "label": "Design"
+   },
+   {
+    "value": "product",
+    "label": "Product"
+   },
+   {
+    "value": "science",
+    "label": "Science"
+   },
+   {
+    "value": "sales",
+    "label": "Sales"
+   },
+   {
+    "value": "marketing",
+    "label": "Marketing"
+   },
+   {
+    "value": "support",
+    "label": "Support"
+   },
+   {
+    "value": "operations",
+    "label": "Operations"
+   },
+   {
+    "value": "recruiting",
+    "label": "Recruiting & HR"
+   },
+   {
+    "value": "finance",
+    "label": "Finance"
+   },
+   {
+    "value": "legal",
+    "label": "Legal"
+   }
+  ],
+  "isMobile": false
+ }
+}

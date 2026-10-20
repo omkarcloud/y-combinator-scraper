@@ -1,0 +1,67 @@
+{
+ "component": "jobs/public/pages/CompanyV2Page",
+ "props": {
+  "flashAlertsHtml": null,
+  "flash": {
+   "alert": null,
+   "success": null,
+   "info": null
+  },
+  "footerLogoPath": "//bookface-static.ycombinator.com/assets/waas/workatastartup_logo_white-fd90bda8fa88dcee932508c8c3edcb6b0c0c06901e773171dd96549a577c4a1b.svg",
+  "variantChrome": true,
+  "company": {
+   "name": "Coris",
+   "slug": "coris",
+   "batch": "S22",
+   "description": "AI risk and ops platform for Payment Processors, Banks, SaaS platforms and Marketplaces",
+   "hiringDescriptionHtml": "<p>Coris is building the AI layer for payments risk and operations. We work with the most ambitious platforms, marketplaces, and payment providers around the globe such as GoFundMe, Kajabi, Clio and Cherry to automate and accelerate merchant onboarding, monitoring, and decision-making. What risk teams only imagined two years ago, Coris is delivering today with our risk platform and AI agents.</p>\n<p>We’re backed by Y Combinator, Lux Capital, Pathlight Ventures, and other world-class investors.</p>\n",
+   "techDescriptionHtml": "<p>Work at Coris involves extracting valuable insights from reams of structured and unstructured data from hundreds of sources. We employ deep learning based NLP and Sentiment Analysis to extract risk and credit signals, and present them in an enhanced format to our users. Our work involves, among others, crawling the web and scraping data on the web for useful information about small businesses.</p>\n<p>The technology stack is built on Python, Django, HTML Javascript, and React. We use Airflow for batch processing and Kafka for async &amp; near real-time processing. On the ML side, we use PyTorch, Scikit-learn, Huggingface Transformers etc. The dockerized application is hosted on AWS.</p>\n",
+   "logoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/f8d68f694a6b7f9bb0fb7015ac9814c591f45f5d.png",
+   "url": "https://coris.ai/",
+   "twitterUrl": "https://twitter.com/CorisInc",
+   "facebookUrl": null,
+   "location": "San Francisco",
+   "teamSize": 10,
+   "industry": "B2B -> Infrastructure",
+   "industries": [
+    "B2B Software and Services",
+    "Infrastructure"
+   ],
+   "founders": [
+    {
+     "name": "Shyam Maddali",
+     "avatarUrl": "https://bookface-images.s3.amazonaws.com/avatars/4716428289cef5c1212db1017901c9efa78c039f.jpg",
+     "bio": "ex-WePay, ex-eBay",
+     "pastCompanies": "Engineer at Various Startups, Engineer at Wipro Limited, CEO at FinBuddy",
+     "linkedin": "https://www.linkedin.com/in/shyammaddali/"
+    },
+    {
+     "name": "Vinodh Poyyapakkam",
+     "avatarUrl": "https://bookface-images.s3.amazonaws.com/avatars/92775bbd1f7783cd2ef5767994ce17309a74124e.jpg",
+     "bio": "Payments Fraud, SMB, Risk & Compliance. Prev: Google, WePay, Paysafe, PayPal, Accenture",
+     "pastCompanies": "Consultant at Accenture, Senior Strategy Consultant at Austin Logistics Inc., Head of Risk at Paysafe",
+     "linkedin": "https://www.linkedin.com/in/vinodhpo/"
+    }
+   ],
+   "jobs": []
+  },
+  "otherCompanies": [
+   {
+    "name": "Artifact",
+    "slug": "artifact-2",
+    "batch": "W25",
+    "oneLiner": "An Collaborative, AI-native IDE for Hardware Engineers",
+    "logoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/764b72bcc2fa5b82a346ca5ceda62d50887b6537.png"
+   },
+   {
+    "name": "Poka Labs",
+    "slug": "poka-labs",
+    "batch": "S24",
+    "oneLiner": "Helping industrial manufacturers win deals fast, at the right price.",
+    "logoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/c3db3e4b14d4a36988633e929d3562b45dfa8d41.png"
+   }
+  ],
+  "signupUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication&defaults%5BsignUpActive%5D=true",
+  "loginUrl": "https://account.ycombinator.com/magic?continue=https%3A%2F%2Fwww.workatastartup.com%2Fcompanies%2Fcoris"
+ }
+}

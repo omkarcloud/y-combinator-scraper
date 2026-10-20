@@ -1,0 +1,98 @@
+{
+ "hits": [
+  {
+   "id": 21981,
+   "first_name": "Brian",
+   "last_name": "Chesky",
+   "hnid": "brianchesky",
+   "avatar_thumb": "https://bookface-images.s3.amazonaws.com/avatars/7415ee0d3978ae738c766fc109863385303b066a.jpg",
+   "current_company": "Airbnb",
+   "current_title": "CEO",
+   "company_slug": "airbnb",
+   "top_company": true,
+   "url_slug": "brian-chesky",
+   "all_companies_text": "Airbnb",
+   "yc_industries": [
+    [
+     "Consumer",
+     "Travel, Leisure and Tourism"
+    ]
+   ],
+   "yc_parent_industries": [
+    "Consumer"
+   ],
+   "yc_subindustries": [
+    "Consumer -> Travel, Leisure and Tourism"
+   ],
+   "current_region": "United States of America",
+   "yc_titles": [
+    "CEO"
+   ],
+   "batches": [
+    "W09"
+   ],
+   "_tags": [
+    "ycdc_public"
+   ],
+   "objectID": "21981",
+   "_highlightResult": {
+    "first_name": {
+     "value": "<em>Brian</em>",
+     "matchLevel": "partial",
+     "fullyHighlighted": true,
+     "matchedWords": [
+      "brian"
+     ]
+    },
+    "last_name": {
+     "value": "<em>Chesky</em>",
+     "matchLevel": "partial",
+     "fullyHighlighted": true,
+     "matchedWords": [
+      "chesky"
+     ]
+    },
+    "hnid": {
+     "value": "<em>brianchesky</em>",
+     "matchLevel": "full",
+     "fullyHighlighted": true,
+     "matchedWords": [
+      "brian",
+      "chesky"
+     ]
+    },
+    "all_companies_text": {
+     "value": "Airbnb",
+     "matchLevel": "none",
+     "matchedWords": []
+    }
+   }
+  }
+ ],
+ "nbHits": 1,
+ "page": 0,
+ "nbPages": 1,
+ "hitsPerPage": 2,
+ "exhaustiveNbHits": true,
+ "exhaustiveTypo": true,
+ "exhaustive": {
+  "nbHits": true,
+  "typo": true
+ },
+ "query": "brian chesky",
+ "params": "query=brian%20chesky&hitsPerPage=2&analyticsTags=ycdc&restrictIndices=YCUsers_production&tagFilters=%5B%22ycdc_public%22%5D&validUntil=1792498092",
+ "index": "YCUsers_production",
+ "renderingContent": {},
+ "extensions": {
+  "queryCategorization": {}
+ },
+ "processingTimeMS": 3,
+ "processingTimingsMS": {
+  "_request": {
+   "roundTrip": 174
+  },
+  "extensions": 2,
+  "total": 3
+ },
+ "serverTimeMS": 4
+}

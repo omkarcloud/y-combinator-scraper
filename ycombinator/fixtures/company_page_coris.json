@@ -1,0 +1,204 @@
+{
+ "component": "ycdc_new/pages/Companies/ShowPage",
+ "props": {
+  "currentUser": null,
+  "disabledPublicVisibility": null,
+  "company": {
+   "id": 26882,
+   "slug": "coris",
+   "name": "Coris",
+   "batch": "S22",
+   "batch_name": "Summer 2022",
+   "small_logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/f8d68f694a6b7f9bb0fb7015ac9814c591f45f5d.png",
+   "one_liner": "AI risk and ops platform for Payment Processors, Banks, SaaS…",
+   "website": "https://coris.ai/",
+   "long_description": "Coris is the AI platform for payments risk and operations. We work with the most ambitious companies around the globe such as GoFundMe, Kajabi, Clio and Cherry to automate merchant onboarding, monitoring, and payment operations. What risk teams only imagined two years ago, Coris is delivering today with our risk platform and AI agents.\r\n\r\nWe’re backed by Y Combinator, Lux Capital, Pathlight Ventures, and other world-class investors — and we’re just getting started !",
+   "tags": [
+    "Fintech",
+    "B2B",
+    "Compliance",
+    "AI"
+   ],
+   "ycdc_status": "Active",
+   "logo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/logos/20dd56169c1c18ad260828f2ab6c7e8ec20d0e2a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAAU52NF24%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T120813Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJIMEYCIQDbuuG4K3TS4WlL%2Fvmdqzu83gwPPGpHP%2BRtMKXPzaMaqgIhAMA27MDXCN%2FaavM1kIjIfsco16hA29kmGkzqi90Xzat5KuUDCCwQABoMMDA2MjAxODExMDcyIgy%2FOiWNOj2uK35kkW8qwgObjGRoztcRr8Goh1Aj3hjpt%2B29dm6Wa28CJgXfkMWUCS%2BlCQjZXqlVxLTFM2wg3nr4AkUjiFWVeRfBqcXSYpVqGYo7GKGFIhgT5EwyqLGrinIVljiE6uQyAyYKVjyCGqC7Ckvyz6mMaXVtCzBxGHJ4zp2tCDmeBnv29rWfJtZS7TmCWZXi2HqYsLJZrIFzeKcFAJJGhIcWPkJk80DGdXVoieOO%2FTFt0FtGvAJJsco1SvbL6QTjv6fg%2BQNHrYSChYPLD%2BL61uP8s9x9pvqB8ngLpgfxQiJLEHxoT6nBne9QKW%2FIeyORH44t49vX8Os7pE2TDaEmNrmkk%2FHmHVE73ohZKtMEF983QROSvovLJa%2Fbd24CNL%2BX7IblDsPb9kuaWeHMS2bUbOXdu22v3WnysG8Q8myYs59zAWCvoTy5DbP5Iu8OACX%2FBUk0sPMXXlY0VjiUP2dEhI1HhxtGwwKX8ei1cfHNVRa40J9tE5yRZXGAw75IRrdViqrMouanOaIlz67KJpH2IrbQE6uOgANjNjcpsUeN9E22ouOZsIHzfIjDlSF5L4N01BjTfhFSmZxSuQVf5zdBOkQZsRbRdudC5Xt3nZIwwufX1gY6pAHImf9COKUaFObCRLR7MlYEWvL8DhNOPR0KTcvnRvJYivxrAV640zszaJ3IBp75P8nz6GVPAqwuSJd2lLSDRDin4Hkx%2FU6tUnzdgekt04Z35HEtkO2iTjskFk1Kabe%2BBGwulSY5c%2FjqFdS3xINq71Rv4OQ9rMjiAU5Y15voLN3RNlGVMAWAhKlJefvkKFKABa8n8Z12ksZ1ujASZNoRSXiD7EJXBw%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=94b29c0617f8d8e2bf186ec0075a8b5e3c93764a00478a2f806780c386dbc711",
+   "year_founded": 2022,
+   "team_size": 10,
+   "location": "San Francisco",
+   "city": "San Francisco",
+   "city_tag": "san-francisco-bay-area",
+   "country": "US",
+   "linkedin_url": "https://www.linkedin.com/company/corisinc/",
+   "twitter_url": "https://twitter.com/CorisInc",
+   "fb_url": "",
+   "cb_url": "",
+   "github_url": "",
+   "free_response_question_answers": [],
+   "dday_video_url": null,
+   "app_video_url": null,
+   "app_answers": [],
+   "ycdc_url": "https://www.ycombinator.com/companies/coris",
+   "company_photos": [],
+   "primary_group_partner": {
+    "id": 5628,
+    "full_name": "Nicolas Dessaigne",
+    "avatar_thumb_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/2827f95ab4f63f6fc0195211105d03de01ff1381.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAAU52NF24%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T120813Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJIMEYCIQDbuuG4K3TS4WlL%2Fvmdqzu83gwPPGpHP%2BRtMKXPzaMaqgIhAMA27MDXCN%2FaavM1kIjIfsco16hA29kmGkzqi90Xzat5KuUDCCwQABoMMDA2MjAxODExMDcyIgy%2FOiWNOj2uK35kkW8qwgObjGRoztcRr8Goh1Aj3hjpt%2B29dm6Wa28CJgXfkMWUCS%2BlCQjZXqlVxLTFM2wg3nr4AkUjiFWVeRfBqcXSYpVqGYo7GKGFIhgT5EwyqLGrinIVljiE6uQyAyYKVjyCGqC7Ckvyz6mMaXVtCzBxGHJ4zp2tCDmeBnv29rWfJtZS7TmCWZXi2HqYsLJZrIFzeKcFAJJGhIcWPkJk80DGdXVoieOO%2FTFt0FtGvAJJsco1SvbL6QTjv6fg%2BQNHrYSChYPLD%2BL61uP8s9x9pvqB8ngLpgfxQiJLEHxoT6nBne9QKW%2FIeyORH44t49vX8Os7pE2TDaEmNrmkk%2FHmHVE73ohZKtMEF983QROSvovLJa%2Fbd24CNL%2BX7IblDsPb9kuaWeHMS2bUbOXdu22v3WnysG8Q8myYs59zAWCvoTy5DbP5Iu8OACX%2FBUk0sPMXXlY0VjiUP2dEhI1HhxtGwwKX8ei1cfHNVRa40J9tE5yRZXGAw75IRrdViqrMouanOaIlz67KJpH2IrbQE6uOgANjNjcpsUeN9E22ouOZsIHzfIjDlSF5L4N01BjTfhFSmZxSuQVf5zdBOkQZsRbRdudC5Xt3nZIwwufX1gY6pAHImf9COKUaFObCRLR7MlYEWvL8DhNOPR0KTcvnRvJYivxrAV640zszaJ3IBp75P8nz6GVPAqwuSJd2lLSDRDin4Hkx%2FU6tUnzdgekt04Z35HEtkO2iTjskFk1Kabe%2BBGwulSY5c%2FjqFdS3xINq71Rv4OQ9rMjiAU5Y15voLN3RNlGVMAWAhKlJefvkKFKABa8n8Z12ksZ1ujASZNoRSXiD7EJXBw%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=b5fc28bbe881e3c610ca26a4a536bd7c0670746156b43763d2aec0cd3ee23706",
+    "url": "https://www.ycombinator.com/people/nicolas-dessaigne"
+   },
+   "founders": [
+    {
+     "user_id": 808733,
+     "is_active": true,
+     "founder_bio": "Payments Fraud, SMB, Risk & Compliance. Prev: Google, WePay, Paysafe, PayPal, Accenture",
+     "full_name": "Vinodh Poyyapakkam",
+     "title": "Founder",
+     "avatar_thumb_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/92775bbd1f7783cd2ef5767994ce17309a74124e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAAU52NF24%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T120813Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJIMEYCIQDbuuG4K3TS4WlL%2Fvmdqzu83gwPPGpHP%2BRtMKXPzaMaqgIhAMA27MDXCN%2FaavM1kIjIfsco16hA29kmGkzqi90Xzat5KuUDCCwQABoMMDA2MjAxODExMDcyIgy%2FOiWNOj2uK35kkW8qwgObjGRoztcRr8Goh1Aj3hjpt%2B29dm6Wa28CJgXfkMWUCS%2BlCQjZXqlVxLTFM2wg3nr4AkUjiFWVeRfBqcXSYpVqGYo7GKGFIhgT5EwyqLGrinIVljiE6uQyAyYKVjyCGqC7Ckvyz6mMaXVtCzBxGHJ4zp2tCDmeBnv29rWfJtZS7TmCWZXi2HqYsLJZrIFzeKcFAJJGhIcWPkJk80DGdXVoieOO%2FTFt0FtGvAJJsco1SvbL6QTjv6fg%2BQNHrYSChYPLD%2BL61uP8s9x9pvqB8ngLpgfxQiJLEHxoT6nBne9QKW%2FIeyORH44t49vX8Os7pE2TDaEmNrmkk%2FHmHVE73ohZKtMEF983QROSvovLJa%2Fbd24CNL%2BX7IblDsPb9kuaWeHMS2bUbOXdu22v3WnysG8Q8myYs59zAWCvoTy5DbP5Iu8OACX%2FBUk0sPMXXlY0VjiUP2dEhI1HhxtGwwKX8ei1cfHNVRa40J9tE5yRZXGAw75IRrdViqrMouanOaIlz67KJpH2IrbQE6uOgANjNjcpsUeN9E22ouOZsIHzfIjDlSF5L4N01BjTfhFSmZxSuQVf5zdBOkQZsRbRdudC5Xt3nZIwwufX1gY6pAHImf9COKUaFObCRLR7MlYEWvL8DhNOPR0KTcvnRvJYivxrAV640zszaJ3IBp75P8nz6GVPAqwuSJd2lLSDRDin4Hkx%2FU6tUnzdgekt04Z35HEtkO2iTjskFk1Kabe%2BBGwulSY5c%2FjqFdS3xINq71Rv4OQ9rMjiAU5Y15voLN3RNlGVMAWAhKlJefvkKFKABa8n8Z12ksZ1ujASZNoRSXiD7EJXBw%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=696d1f2e6293403113f9846ceb5378de3dc507b1122831d1c7095a76450701b0",
+     "twitter_url": "https://twitter.com/psvinodh",
+     "linkedin_url": "https://www.linkedin.com/in/vinodhpo/",
+     "has_email": true,
+     "latest_yc_company": {
+      "name": "Coris",
+      "href": "https://www.ycombinator.com/companies/coris"
+     }
+    },
+    {
+     "user_id": 982526,
+     "is_active": true,
+     "founder_bio": "ex-WePay, ex-eBay",
+     "full_name": "Shyam Maddali",
+     "title": "Founder",
+     "avatar_thumb_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/4716428289cef5c1212db1017901c9efa78c039f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAAU52NF24%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T120813Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJIMEYCIQDbuuG4K3TS4WlL%2Fvmdqzu83gwPPGpHP%2BRtMKXPzaMaqgIhAMA27MDXCN%2FaavM1kIjIfsco16hA29kmGkzqi90Xzat5KuUDCCwQABoMMDA2MjAxODExMDcyIgy%2FOiWNOj2uK35kkW8qwgObjGRoztcRr8Goh1Aj3hjpt%2B29dm6Wa28CJgXfkMWUCS%2BlCQjZXqlVxLTFM2wg3nr4AkUjiFWVeRfBqcXSYpVqGYo7GKGFIhgT5EwyqLGrinIVljiE6uQyAyYKVjyCGqC7Ckvyz6mMaXVtCzBxGHJ4zp2tCDmeBnv29rWfJtZS7TmCWZXi2HqYsLJZrIFzeKcFAJJGhIcWPkJk80DGdXVoieOO%2FTFt0FtGvAJJsco1SvbL6QTjv6fg%2BQNHrYSChYPLD%2BL61uP8s9x9pvqB8ngLpgfxQiJLEHxoT6nBne9QKW%2FIeyORH44t49vX8Os7pE2TDaEmNrmkk%2FHmHVE73ohZKtMEF983QROSvovLJa%2Fbd24CNL%2BX7IblDsPb9kuaWeHMS2bUbOXdu22v3WnysG8Q8myYs59zAWCvoTy5DbP5Iu8OACX%2FBUk0sPMXXlY0VjiUP2dEhI1HhxtGwwKX8ei1cfHNVRa40J9tE5yRZXGAw75IRrdViqrMouanOaIlz67KJpH2IrbQE6uOgANjNjcpsUeN9E22ouOZsIHzfIjDlSF5L4N01BjTfhFSmZxSuQVf5zdBOkQZsRbRdudC5Xt3nZIwwufX1gY6pAHImf9COKUaFObCRLR7MlYEWvL8DhNOPR0KTcvnRvJYivxrAV640zszaJ3IBp75P8nz6GVPAqwuSJd2lLSDRDin4Hkx%2FU6tUnzdgekt04Z35HEtkO2iTjskFk1Kabe%2BBGwulSY5c%2FjqFdS3xINq71Rv4OQ9rMjiAU5Y15voLN3RNlGVMAWAhKlJefvkKFKABa8n8Z12ksZ1ujASZNoRSXiD7EJXBw%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=3afdcb6b842da0067377842a315e41f9794db35fcff4d556d916a2083a9a7d73",
+     "twitter_url": "https://twitter.com/mlshyam",
+     "linkedin_url": "https://www.linkedin.com/in/shyammaddali/",
+     "has_email": true,
+     "latest_yc_company": {
+      "name": "Coris",
+      "href": "https://www.ycombinator.com/companies/coris"
+     }
+    }
+   ]
+  },
+  "jobPostings": [
+   {
+    "id": 100286,
+    "title": "Chief of Staff",
+    "url": "/companies/coris/jobs/I26T5Uv-chief-of-staff",
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D100286&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=26882",
+    "location": "Palo Alto, CA, US",
+    "askUs": true,
+    "type": "Full-time",
+    "role": "operations",
+    "roleSpecificType": null,
+    "prettyRole": "Operations",
+    "salaryRange": "$120K - $150K",
+    "equityRange": "0.40% - 0.70%",
+    "minExperience": "3+ years",
+    "minSchoolYear": null,
+    "visa": "US citizen/visa only",
+    "skills": [
+     "AI Agents"
+    ],
+    "isIncomplete": false,
+    "companyUrl": "/companies/coris",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/f8d68f694a6b7f9bb0fb7015ac9814c591f45f5d.png",
+    "companyName": "Coris",
+    "companyBatchName": "S22",
+    "companyOneLiner": "AI risk and ops platform for Payment Processors, Banks, SaaS…",
+    "hiringManager": null,
+    "createdAt": "3 months",
+    "lastActive": "22 days"
+   },
+   {
+    "id": 116108,
+    "title": "Backend Engineer (AI-Native) — Risk Infrastructure & Integrations",
+    "url": "/companies/coris/jobs/h0nDly8-backend-engineer-ai-native-risk-infrastructure-integrations",
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D116108&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=26882",
+    "location": "Palo Alto, CA, US",
+    "askUs": true,
+    "type": "Full-time",
+    "role": "eng",
+    "roleSpecificType": "Backend",
+    "prettyRole": "Engineering",
+    "salaryRange": "$160 - $175",
+    "equityRange": "0.25% - 0.50%",
+    "minExperience": "3+ years",
+    "minSchoolYear": null,
+    "visa": "US citizen/visa only",
+    "skills": [
+     "Django",
+     "JavaScript",
+     "PostgreSQL",
+     "Python",
+     "TypeScript"
+    ],
+    "isIncomplete": false,
+    "companyUrl": "/companies/coris",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/f8d68f694a6b7f9bb0fb7015ac9814c591f45f5d.png",
+    "companyName": "Coris",
+    "companyBatchName": "S22",
+    "companyOneLiner": "AI risk and ops platform for Payment Processors, Banks, SaaS…",
+    "hiringManager": null,
+    "createdAt": "7 days",
+    "lastActive": "3 days"
+   }
+  ],
+  "jobsUrl": "https://bookface.ycombinator.com/workatastartup",
+  "newsItems": [
+   {
+    "title": "Coris raises $3.7M, sets sights on AI-driven paradigm shift in SMB risk management | VentureBeat",
+    "url": "https://venturebeat.com/ai/coris-raises-3-7m-sets-sights-on-ai-driven-paradigm-shift-in-smb-risk-management/",
+    "date": "Feb 01, 2024"
+   }
+  ],
+  "newsUrl": "https://bookface.ycombinator.com/company/26882/company_news",
+  "videos": [],
+  "launches": [
+   {
+    "id": 65063,
+    "title": "Coris - Manage Small Business Risk Thoughtfully",
+    "body": "**Coris is a Risk API for Fintechs that underwrite SMBs**\n\nHi everyone !\n\nThis is [Shyam](https://www.linkedin.com/in/shyammaddali/) and [Vinodh](https://www.linkedin.com/in/vinodhpo/) from [Coris](https://www.coris.ai/). We are super stoked to share with y’all what we are building.\n\n### **Background**\n\nShyam and I have spent last 20+ years at companies such as eBay, PayPal, WePay/JPMC (_YC S09_) and Google managing small business risk for payments and lending products. Two of the biggest problems we faced were in gaining a solid understanding of what a SMB does at the time of underwriting and continuing to keep a tab externally on how they operate.\n\n### **Problem**\n\n**Traditional bureaus hardly help** with small business credit risk assessment given their abysmal coverage of small businesses, lack of predictive data, painful integrations, and expensive products. Fintechs especially struggle to get the right data on quality of a small business to accurately assess credit exposure\n\nWhile payments data and bank-level financial data have helped somewhat in recent times to fill the void in SMB underwriting, they still miss some huge signals on how a business operates. Biggest problem is lot of **valuable data on a business remain unstructured** in the open internet for models/rules to consume\n\nAlso once a small business is approved for payments, lending or another credit product, **most companies are in dark about them** until they see chargebacks come in or see missed payments\n\n### **Solution**\n\nWe believe there is tremendous potential for alternative credit-relevant data in SMB risk management. With that said, we have two products to start with:\n\n1. **Alternative data on every SMB** in the US through one developer-first API - Licensing details, Website Professionalism signals, Online Reviews based signals, Business Incorporation details, and Local Inspection data\n2. **Monitoring of small businesses** across various online/offline surfaces and raise an alert for action when a business deterioration/failure is suspected, much before chargebacks or defaults start happening\n\n### **Our Asks**\n\n1. If you are running a Fintech/Platform and serve SMBs in the US, we would love to get your direct feedback on what we are building. Even better, **sign up to our** [**beta here**](https://www.coris.ai/#contact_form) !\n2. **Connect us to platforms/companies** that might benefit from what we are building or for us to learn from\n3. **Feel free to say hi at** [founders@coris.ai](mailto:founders@coris.ai) ! We love riffing on SMB underwriting/fraud/KYB and talk shop on where the industry is heading\n4. Last but not the least, **please share this post** ! Please help spread the word on how we are looking to make life easier for Fintechs to serve their SMB customers !!",
+    "state": "public",
+    "tagline": "Our data and software helps Fintechs manage SMB Risk with no stress !",
+    "created_at": "2022-08-02T07:55:11.922Z",
+    "company": {
+     "id": 26882,
+     "name": "Coris",
+     "logo": "https://bookface-images.s3.amazonaws.com/small_logos/f8d68f694a6b7f9bb0fb7015ac9814c591f45f5d.png",
+     "batch": "s2022",
+     "tags": [
+      "Fintech",
+      "B2B",
+      "Compliance",
+      "AI"
+     ],
+     "url": "https://coris.ai/",
+     "slug": "coris",
+     "description": "AI risk and ops platform for Payment Processors, Banks, SaaS platforms and Marketplaces"
+    },
+    "user": {
+     "name": "Vinodh Poyyapakkam",
+     "avatar": "https://bookface-images.s3.amazonaws.com/avatars/92775bbd1f7783cd2ef5767994ce17309a74124e.jpg"
+    },
+    "total_vote_count": 71,
+    "slug": "GvP-coris-manage-small-business-risk-thoughtfully",
+    "launch_embed_url": "https://www.ycombinator.com/launches/GvP-coris-manage-small-business-risk-thoughtfully/upvote_embed.svg",
+    "twitter_share_url": "https://twitter.com/intent/tweet?text=Coris+just+launched+on+%40ycombinator%27s+Launch+YC%21%0A%0ACoris+-+Manage+Small+Business+Risk+Thoughtfully.+Check+them+out%3A&url=https%3A%2F%2Fwww.ycombinator.com%2Flaunches%2FGvP-coris-manage-small-business-risk-thoughtfully",
+    "sanitized_title": "Coris - Manage Small Business Risk Thoughtfully",
+    "ycdc_launch_url": "https://www.ycombinator.com/launches/GvP-coris-manage-small-business-risk-thoughtfully",
+    "url": "https://www.ycombinator.com/launches/GvP-coris-manage-small-business-risk-thoughtfully",
+    "share_config": {},
+    "share_image": null,
+    "approved_at": null,
+    "approved_by": null,
+    "requested_publish_at": null
+   }
+  ],
+  "editUrl": "https://bookface.ycombinator.com/company/26882/edit",
+  "editUserUrl": "https://bookface.ycombinator.com/edit_user_profile",
+  "createProfileUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication&defaults%5BsignUpActive%5D=true",
+  "signedIn": false,
+  "showDirectApply": true,
+  "waasDirectoryUrl": "https://www.workatastartup.com/companies",
+  "investorSubdomain": false,
+  "userCanRequestEmails": false
+ }
+}

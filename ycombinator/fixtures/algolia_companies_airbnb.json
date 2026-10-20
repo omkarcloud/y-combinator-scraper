@@ -1,0 +1,230 @@
+{
+ "hits": [
+  {
+   "id": 271,
+   "name": "Airbnb",
+   "slug": "airbnb",
+   "former_names": [],
+   "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/3e9a0092bee2ccf926e650e59c06503ec6b9ee65.png",
+   "website": "http://airbnb.com",
+   "all_locations": "San Francisco, CA, USA",
+   "long_description": "Founded in August of 2008 and based in San Francisco, California, Airbnb is a trusted community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone. Whether an apartment for a night, a castle for a week, or a villa for a month, Airbnb connects people to unique travel experiences, at any price point, in more than 33,000 cities and 192 countries. And with world-class customer service and a growing community of users, Airbnb is the easiest way for people to monetize their extra space and showcase it to an audience of millions.  \r\n\r\nNo global movement springs from individuals. It takes an entire team united behind something big. Together, we work hard, we laugh a lot, we brainstorm nonstop, we use hundreds of Post-Its a week, and we give the best high-fives in town. Headquartered in San Francisco, we have satellite offices in Dublin, London, Barcelona, Paris, Milan, Copenhagen, Berlin, Moscow, São Paolo, Sydney, and Singapore.",
+   "one_liner": "Book accommodations around the world.",
+   "team_size": 6132,
+   "industry": "Consumer",
+   "subindustry": "Consumer -> Travel, Leisure and Tourism",
+   "launched_at": 1326790856,
+   "tags": [
+    "Marketplace",
+    "Travel"
+   ],
+   "tags_highlighted": [],
+   "top_company": true,
+   "isHiring": false,
+   "nonprofit": false,
+   "batch": "Winter 2009",
+   "status": "Public",
+   "industries": [
+    "Consumer",
+    "Travel, Leisure and Tourism"
+   ],
+   "regions": [
+    "United States of America",
+    "America / Canada"
+   ],
+   "stage": "Growth",
+   "app_video_public": false,
+   "demo_day_video_public": false,
+   "app_answers": null,
+   "question_answers": false,
+   "objectID": "271",
+   "_highlightResult": {
+    "name": {
+     "value": "<em>Airbnb</em>",
+     "matchLevel": "full",
+     "fullyHighlighted": true,
+     "matchedWords": [
+      "airbnb"
+     ]
+    },
+    "website": {
+     "value": "http://<em>airbnb</em>.com",
+     "matchLevel": "full",
+     "fullyHighlighted": false,
+     "matchedWords": [
+      "airbnb"
+     ]
+    },
+    "all_locations": {
+     "value": "San Francisco, CA, USA",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "long_description": {
+     "value": "Founded in August of 2008 and based in San Francisco, California, <em>Airbnb</em> is a trusted community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone. Whether an apartment for a night, a castle for a week, or a villa for a month, <em>Airbnb</em> connects people to unique travel experiences, at any price point, in more than 33,000 cities and 192 countries. And with world-class customer service and a growing community of users, <em>Airbnb</em> is the easiest way for people to monetize their extra space and showcase it to an audience of millions.  \r\n\r\nNo global movement springs from individuals. It takes an entire team united behind something big. Together, we work hard, we laugh a lot, we brainstorm nonstop, we use hundreds of Post-Its a week, and we give the best high-fives in town. Headquartered in San Francisco, we have satellite offices in Dublin, London, Barcelona, Paris, Milan, Copenhagen, Berlin, Moscow, São Paolo, Sydney, and Singapore.",
+     "matchLevel": "full",
+     "fullyHighlighted": false,
+     "matchedWords": [
+      "airbnb"
+     ]
+    },
+    "one_liner": {
+     "value": "Book accommodations around the world.",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "tags": [
+     {
+      "value": "Marketplace",
+      "matchLevel": "none",
+      "matchedWords": []
+     },
+     {
+      "value": "Travel",
+      "matchLevel": "none",
+      "matchedWords": []
+     }
+    ],
+    "industries": [
+     {
+      "value": "Consumer",
+      "matchLevel": "none",
+      "matchedWords": []
+     },
+     {
+      "value": "Travel, Leisure and Tourism",
+      "matchLevel": "none",
+      "matchedWords": []
+     }
+    ]
+   }
+  },
+  {
+   "id": 24053,
+   "name": "ODWEN",
+   "slug": "odwen",
+   "former_names": [],
+   "small_logo_thumb_url": "https://bookface-images.s3.amazonaws.com/small_logos/e8ab18dae7115ef76227acd0cd0b5680b6505cd7.png",
+   "website": "https://www.odwen.co.in",
+   "all_locations": "Delhi, DL, India",
+   "long_description": "ODWEN enables India’s 60m SME's to find curated warehouses in minutes at prices 20% below current market and transport their inventory in and out with just a few clicks.  With 2000+ warehouses across 180 locations, we are the largest integrated 3PL/ warehouse network in India.",
+   "one_liner": "AirBnB for Small Warehouses",
+   "team_size": 21,
+   "industry": "B2B",
+   "subindustry": "B2B -> Supply Chain and Logistics",
+   "launched_at": 1629482209,
+   "tags": [
+    "Marketplace",
+    "Warehouse Management Tech",
+    "B2B"
+   ],
+   "tags_highlighted": [],
+   "top_company": false,
+   "isHiring": false,
+   "nonprofit": false,
+   "batch": "Summer 2021",
+   "status": "Active",
+   "industries": [
+    "B2B",
+    "Supply Chain and Logistics"
+   ],
+   "regions": [
+    "India",
+    "South Asia",
+    "Remote",
+    "Partly Remote"
+   ],
+   "stage": "Early",
+   "app_video_public": false,
+   "demo_day_video_public": false,
+   "app_answers": null,
+   "question_answers": false,
+   "objectID": "24053",
+   "_highlightResult": {
+    "name": {
+     "value": "ODWEN",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "website": {
+     "value": "https://www.odwen.co.in",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "all_locations": {
+     "value": "Delhi, DL, India",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "long_description": {
+     "value": "ODWEN enables India’s 60m SME's to find curated warehouses in minutes at prices 20% below current market and transport their inventory in and out with just a few clicks.  With 2000+ warehouses across 180 locations, we are the largest integrated 3PL/ warehouse network in India.",
+     "matchLevel": "none",
+     "matchedWords": []
+    },
+    "one_liner": {
+     "value": "<em>AirBnB</em> for Small Warehouses",
+     "matchLevel": "full",
+     "fullyHighlighted": false,
+     "matchedWords": [
+      "airbnb"
+     ]
+    },
+    "tags": [
+     {
+      "value": "Marketplace",
+      "matchLevel": "none",
+      "matchedWords": []
+     },
+     {
+      "value": "Warehouse Management Tech",
+      "matchLevel": "none",
+      "matchedWords": []
+     },
+     {
+      "value": "B2B",
+      "matchLevel": "none",
+      "matchedWords": []
+     }
+    ],
+    "industries": [
+     {
+      "value": "B2B",
+      "matchLevel": "none",
+      "matchedWords": []
+     },
+     {
+      "value": "Supply Chain and Logistics",
+      "matchLevel": "none",
+      "matchedWords": []
+     }
+    ]
+   }
+  }
+ ],
+ "nbHits": 79,
+ "page": 0,
+ "nbPages": 40,
+ "hitsPerPage": 2,
+ "exhaustiveNbHits": true,
+ "exhaustiveTypo": true,
+ "exhaustive": {
+  "nbHits": true,
+  "typo": true
+ },
+ "query": "airbnb",
+ "params": "query=airbnb&hitsPerPage=2&analyticsTags=ycdc&restrictIndices=YCCompany_production%2CYCCompany_By_Launch_Date_production&tagFilters=%5B%22ycdc_public%22%5D&validUntil=1792498091",
+ "index": "YCCompany_production",
+ "renderingContent": {},
+ "extensions": {
+  "queryCategorization": {}
+ },
+ "processingTimeMS": 3,
+ "processingTimingsMS": {
+  "_request": {
+   "roundTrip": 175
+  },
+  "extensions": 1,
+  "total": 3
+ },
+ "serverTimeMS": 4
+}

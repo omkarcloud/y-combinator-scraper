@@ -1,0 +1,55 @@
+{
+ "hits": [
+  {
+   "id": 122477,
+   "title": "Asakana: Automating sales and the entire back office for food distributors",
+   "tagline": "Asakana translates texts, calls and handwritten notes from restaurants directly into existing ERPs, including orders, credit memos, returns. Restaurants and distributors change nothing. ",
+   "slug": "VrR-asakana-automating-sales-and-the-entire-back-office-for-food-distributors",
+   "created_at": "2026-10-16T19:00:00.208Z",
+   "total_vote_count": 48,
+   "company": {
+    "id": 35261,
+    "model_type": "Company",
+    "model_id": 35261,
+    "name": "Asakana",
+    "url": "https://www.asakana.co/",
+    "slug": "asakana",
+    "logo": "https://bookface-images.s3.amazonaws.com/small_logos/b17bfb784fbfd8ce18bf9fc551a8a6c2a2c68f02.png",
+    "tags": [
+     "SaaS",
+     "Food & Beverage"
+    ],
+    "batch": "Fall 2026",
+    "industry": "B2B",
+    "search_path": "https://bookface.ycombinator.com/company/35261"
+   },
+   "search_path": "https://www.ycombinator.com/launches/VrR-asakana-automating-sales-and-the-entire-back-office-for-food-distributors"
+  },
+  {
+   "id": 122247,
+   "title": "PlaceCall by VOYGR – The phone is the last API",
+   "tagline": "Find the right businesses. Call them in parallel. Get answers, quotes, and bookings – all through one API.",
+   "slug": "Vnj-placecall-by-voygr-the-phone-is-the-last-api",
+   "created_at": "2026-10-15T20:12:23.191Z",
+   "total_vote_count": 102,
+   "company": {
+    "id": 31271,
+    "model_type": "Company",
+    "model_id": 31271,
+    "name": "VOYGR",
+    "url": "https://voygr.tech",
+    "slug": "voygr",
+    "logo": "https://bookface-images.s3.amazonaws.com/small_logos/f0f0bf8a667e6a150380872419b6209ced7f1423.png",
+    "tags": [],
+    "batch": "Winter 2026",
+    "industry": "B2B",
+    "search_path": "https://bookface.ycombinator.com/company/31271"
+   },
+   "search_path": "https://www.ycombinator.com/launches/Vnj-placecall-by-voygr-the-phone-is-the-last-api"
+  }
+ ],
+ "nbHits": 3331,
+ "page": 0,
+ "nbPages": 500,
+ "hitsPerPage": 2
+}

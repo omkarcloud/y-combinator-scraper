@@ -1,0 +1,10 @@
+services:
+  y-combinator-scraper:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      # Optional — ycombinator.com runs no bot protection, so leave this unset.
+      # - YCOMBINATOR_PROXY=http://user:pass@host:port

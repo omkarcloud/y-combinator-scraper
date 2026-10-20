@@ -1,0 +1,177 @@
+{
+ "component": "WaasShowJobPage",
+ "props": {
+  "currentUser": null,
+  "company": {
+   "id": 26882,
+   "slug": "coris",
+   "name": "Coris",
+   "batch_name": "S22",
+   "small_logo_url": "https://bookface-images.s3.amazonaws.com/small_logos/f8d68f694a6b7f9bb0fb7015ac9814c591f45f5d.png",
+   "one_liner": "AI risk and ops platform for Payment Processors, Banks, SaaS…",
+   "website": "https://coris.ai/",
+   "long_description": "Coris is the AI platform for payments risk and operations. We work with the most ambitious companies around the globe such as GoFundMe, Kajabi, Clio and Cherry to automate merchant onboarding, monitoring, and payment operations. What risk teams only imagined two years ago, Coris is delivering today with our risk platform and AI agents.\r\n\r\nWe’re backed by Y Combinator, Lux Capital, Pathlight Ventures, and other world-class investors — and we’re just getting started !",
+   "tags": [
+    "Fintech",
+    "B2B",
+    "Compliance",
+    "AI"
+   ],
+   "ycdc_status": "Active",
+   "logo_url": "https://bookface-images.s3.us-west-2.amazonaws.com/logos/20dd56169c1c18ad260828f2ab6c7e8ec20d0e2a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAG6EJG33M%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T120814Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJHMEUCIQDidWlBkOCeKS8CKbvtN%2BgLz76b7kW3JqgPXEOWH159uAIgUNw9eG1nnSZaN8zLid8zMETtSqZbELxR2qQYlFBFnMQq5QMILBAAGgwwMDYyMDE4MTEwNzIiDD9T%2FPNUVh%2BSSlQGXyrCA5owwPEDpl2H2bZxjiZYqSFS9PxPtIvOYvbFh0ME7YnuvX3EqpiUk4nF2EUkji7GlNFnVCG9LKPVJHscfPjn2GyM16A06flJy%2Fcpgzcz%2Ft2mqFVyMuOaG%2FA3o0CfZAftqMjUVjrQhoaTzfFWocqH4LkOD%2BGRHCNDdE2msJekfBZESn%2BUAlDnNHEC%2FLkWDKQ9B1RJFtFwYrtLKHy9CbkWTUdEEARHrreSaAi69jC6VuEkKBOn7ImQHzD8YBRBFQKtk4m3kNSjL96w%2Fqq0H25%2ByKBdJu0GwvNBONB3FNuzLlu%2BbAa%2BprxXiWQc51fU7FbI03hx%2Bsme0S2XhsiCcDa2LoOW%2B6xUiOouP2175tOMp3n8DR1A1D%2Bob%2ByVSskDYR8Jjlwd67yPT7teQ4%2BMYtlhnihJRLkzYOhzAln6bLg%2F5X%2FK7QGOc3Y8ckNZGO8X4YbemjbMIAT5%2Fq0hSyUazo4sK71LCyHIgwVu5Ipglonnz9Zcka%2FF1DjwH5xifo2UfFEnXO75fb4646YW07d9g37g0NYXR2paaYQozkKGp7un6S%2FCYCQE46fKTbSaYK%2F51TVRyVAnqM2sO%2Fb7tUpzjvBFDdlzODDa%2BNfWBjqlAU5PD4MKUl4jRjyqs2eLixPtNSDfs8JJ5yNrOCQttJ3V%2BSpWCn%2FCIgzNiUO4NxN%2FvmIvfrINa%2FFqNYBfYxcqOi%2F4BENYtrDvIArMZ8Jrvcz12mrdr9Du35p8cUQFd7Ew%2BdkzkJ7ulZ7ivh3cVrW1HjjZOTSv%2BjzZDrTQ97RbxGZkss8ABeJn7bmOZl%2B6kyiqQJuLZHwGzP0xAd79CODL3wYQeHpmDg%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=5654d91fb18e66b36a3387168c2d5f50648e4dd49e52122d0679fcce1c17a151",
+   "year_founded": 2022,
+   "team_size": 10,
+   "location": "San Francisco",
+   "country": "US",
+   "linkedin_url": "https://www.linkedin.com/company/corisinc/",
+   "twitter_url": "https://twitter.com/CorisInc",
+   "fb_url": "",
+   "cb_url": "",
+   "show_founder_contact": true,
+   "hiring_description": "Coris is building the AI layer for payments risk and operations. We work with the most ambitious platforms, marketplaces, and payment providers around the globe such as GoFundMe, Kajabi, Clio and Cherry to automate and accelerate merchant onboarding, monitoring, and decision-making. What risk teams only imagined two years ago, Coris is delivering today with our risk platform and AI agents.\r\n\r\nWe’re backed by Y Combinator, Lux Capital, Pathlight Ventures, and other world-class investors.",
+   "founders": [
+    {
+     "user_id": 982526,
+     "is_active": true,
+     "founder_bio": "ex-WePay, ex-eBay",
+     "full_name": "Shyam Maddali",
+     "title": null,
+     "avatar_thumb_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/4716428289cef5c1212db1017901c9efa78c039f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAG6EJG33M%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T120814Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJHMEUCIQDidWlBkOCeKS8CKbvtN%2BgLz76b7kW3JqgPXEOWH159uAIgUNw9eG1nnSZaN8zLid8zMETtSqZbELxR2qQYlFBFnMQq5QMILBAAGgwwMDYyMDE4MTEwNzIiDD9T%2FPNUVh%2BSSlQGXyrCA5owwPEDpl2H2bZxjiZYqSFS9PxPtIvOYvbFh0ME7YnuvX3EqpiUk4nF2EUkji7GlNFnVCG9LKPVJHscfPjn2GyM16A06flJy%2Fcpgzcz%2Ft2mqFVyMuOaG%2FA3o0CfZAftqMjUVjrQhoaTzfFWocqH4LkOD%2BGRHCNDdE2msJekfBZESn%2BUAlDnNHEC%2FLkWDKQ9B1RJFtFwYrtLKHy9CbkWTUdEEARHrreSaAi69jC6VuEkKBOn7ImQHzD8YBRBFQKtk4m3kNSjL96w%2Fqq0H25%2ByKBdJu0GwvNBONB3FNuzLlu%2BbAa%2BprxXiWQc51fU7FbI03hx%2Bsme0S2XhsiCcDa2LoOW%2B6xUiOouP2175tOMp3n8DR1A1D%2Bob%2ByVSskDYR8Jjlwd67yPT7teQ4%2BMYtlhnihJRLkzYOhzAln6bLg%2F5X%2FK7QGOc3Y8ckNZGO8X4YbemjbMIAT5%2Fq0hSyUazo4sK71LCyHIgwVu5Ipglonnz9Zcka%2FF1DjwH5xifo2UfFEnXO75fb4646YW07d9g37g0NYXR2paaYQozkKGp7un6S%2FCYCQE46fKTbSaYK%2F51TVRyVAnqM2sO%2Fb7tUpzjvBFDdlzODDa%2BNfWBjqlAU5PD4MKUl4jRjyqs2eLixPtNSDfs8JJ5yNrOCQttJ3V%2BSpWCn%2FCIgzNiUO4NxN%2FvmIvfrINa%2FFqNYBfYxcqOi%2F4BENYtrDvIArMZ8Jrvcz12mrdr9Du35p8cUQFd7Ew%2BdkzkJ7ulZ7ivh3cVrW1HjjZOTSv%2BjzZDrTQ97RbxGZkss8ABeJn7bmOZl%2B6kyiqQJuLZHwGzP0xAd79CODL3wYQeHpmDg%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=0b86a3ab5454bd260c2a5db7dc7621b3606ebd8ac19c57596d56844bd048c67b",
+     "twitter_url": "https://twitter.com/mlshyam",
+     "linkedin_url": "https://www.linkedin.com/in/shyammaddali/",
+     "latest_yc_company": {
+      "name": "Coris",
+      "href": "/companies/coris"
+     }
+    },
+    {
+     "user_id": 808733,
+     "is_active": true,
+     "founder_bio": "Payments Fraud, SMB, Risk & Compliance. Prev: Google, WePay, Paysafe, PayPal, Accenture",
+     "full_name": "Vinodh Poyyapakkam",
+     "title": null,
+     "avatar_thumb_url": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/92775bbd1f7783cd2ef5767994ce17309a74124e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAG6EJG33M%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T120814Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJHMEUCIQDidWlBkOCeKS8CKbvtN%2BgLz76b7kW3JqgPXEOWH159uAIgUNw9eG1nnSZaN8zLid8zMETtSqZbELxR2qQYlFBFnMQq5QMILBAAGgwwMDYyMDE4MTEwNzIiDD9T%2FPNUVh%2BSSlQGXyrCA5owwPEDpl2H2bZxjiZYqSFS9PxPtIvOYvbFh0ME7YnuvX3EqpiUk4nF2EUkji7GlNFnVCG9LKPVJHscfPjn2GyM16A06flJy%2Fcpgzcz%2Ft2mqFVyMuOaG%2FA3o0CfZAftqMjUVjrQhoaTzfFWocqH4LkOD%2BGRHCNDdE2msJekfBZESn%2BUAlDnNHEC%2FLkWDKQ9B1RJFtFwYrtLKHy9CbkWTUdEEARHrreSaAi69jC6VuEkKBOn7ImQHzD8YBRBFQKtk4m3kNSjL96w%2Fqq0H25%2ByKBdJu0GwvNBONB3FNuzLlu%2BbAa%2BprxXiWQc51fU7FbI03hx%2Bsme0S2XhsiCcDa2LoOW%2B6xUiOouP2175tOMp3n8DR1A1D%2Bob%2ByVSskDYR8Jjlwd67yPT7teQ4%2BMYtlhnihJRLkzYOhzAln6bLg%2F5X%2FK7QGOc3Y8ckNZGO8X4YbemjbMIAT5%2Fq0hSyUazo4sK71LCyHIgwVu5Ipglonnz9Zcka%2FF1DjwH5xifo2UfFEnXO75fb4646YW07d9g37g0NYXR2paaYQozkKGp7un6S%2FCYCQE46fKTbSaYK%2F51TVRyVAnqM2sO%2Fb7tUpzjvBFDdlzODDa%2BNfWBjqlAU5PD4MKUl4jRjyqs2eLixPtNSDfs8JJ5yNrOCQttJ3V%2BSpWCn%2FCIgzNiUO4NxN%2FvmIvfrINa%2FFqNYBfYxcqOi%2F4BENYtrDvIArMZ8Jrvcz12mrdr9Du35p8cUQFd7Ew%2BdkzkJ7ulZ7ivh3cVrW1HjjZOTSv%2BjzZDrTQ97RbxGZkss8ABeJn7bmOZl%2B6kyiqQJuLZHwGzP0xAd79CODL3wYQeHpmDg%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=7419721b648c800208d5634eec512af5f5eeea87f2e25b0cec19d411c680e133",
+     "twitter_url": "https://twitter.com/psvinodh",
+     "linkedin_url": "https://www.linkedin.com/in/vinodhpo/",
+     "latest_yc_company": {
+      "name": "Coris",
+      "href": "/companies/coris"
+     }
+    }
+   ]
+  },
+  "job": {
+   "id": 116108,
+   "title": "Backend Engineer (AI-Native) — Risk Infrastructure & Integrations",
+   "url": "/companies/coris/jobs/h0nDly8-backend-engineer-ai-native-risk-infrastructure-integrations",
+   "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D116108&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=26882",
+   "location": "Palo Alto, CA, US",
+   "askUs": true,
+   "type": "Full-time",
+   "role": "eng",
+   "roleSpecificType": "Backend",
+   "prettyRole": "Engineering",
+   "salaryRange": "$160 - $175",
+   "equityRange": "0.25% - 0.50%",
+   "minExperience": "3+ years",
+   "minSchoolYear": null,
+   "visa": "US citizen/visa only",
+   "skills": [
+    "Django",
+    "JavaScript",
+    "PostgreSQL",
+    "Python",
+    "TypeScript"
+   ],
+   "isIncomplete": false,
+   "companyUrl": "/companies/coris",
+   "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/f8d68f694a6b7f9bb0fb7015ac9814c591f45f5d.png",
+   "companyName": "Coris",
+   "companyBatchName": "S22",
+   "companyOneLiner": "AI risk and ops platform for Payment Processors, Banks, SaaS…",
+   "hiringManager": {
+    "id": 982526,
+    "first_name": "Shyam",
+    "last_name": "Maddali",
+    "avatar_thumb": "https://bookface-images.s3.amazonaws.com/avatars/4716428289cef5c1212db1017901c9efa78c039f.jpg",
+    "avatar_medium": "https://bookface-images.s3.us-west-2.amazonaws.com/avatars/afe360b04cb59683fba2686dacc3501c15e74832.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQC4NIECAG6EJG33M%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T120814Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGMaCXVzLXdlc3QtMiJHMEUCIQDidWlBkOCeKS8CKbvtN%2BgLz76b7kW3JqgPXEOWH159uAIgUNw9eG1nnSZaN8zLid8zMETtSqZbELxR2qQYlFBFnMQq5QMILBAAGgwwMDYyMDE4MTEwNzIiDD9T%2FPNUVh%2BSSlQGXyrCA5owwPEDpl2H2bZxjiZYqSFS9PxPtIvOYvbFh0ME7YnuvX3EqpiUk4nF2EUkji7GlNFnVCG9LKPVJHscfPjn2GyM16A06flJy%2Fcpgzcz%2Ft2mqFVyMuOaG%2FA3o0CfZAftqMjUVjrQhoaTzfFWocqH4LkOD%2BGRHCNDdE2msJekfBZESn%2BUAlDnNHEC%2FLkWDKQ9B1RJFtFwYrtLKHy9CbkWTUdEEARHrreSaAi69jC6VuEkKBOn7ImQHzD8YBRBFQKtk4m3kNSjL96w%2Fqq0H25%2ByKBdJu0GwvNBONB3FNuzLlu%2BbAa%2BprxXiWQc51fU7FbI03hx%2Bsme0S2XhsiCcDa2LoOW%2B6xUiOouP2175tOMp3n8DR1A1D%2Bob%2ByVSskDYR8Jjlwd67yPT7teQ4%2BMYtlhnihJRLkzYOhzAln6bLg%2F5X%2FK7QGOc3Y8ckNZGO8X4YbemjbMIAT5%2Fq0hSyUazo4sK71LCyHIgwVu5Ipglonnz9Zcka%2FF1DjwH5xifo2UfFEnXO75fb4646YW07d9g37g0NYXR2paaYQozkKGp7un6S%2FCYCQE46fKTbSaYK%2F51TVRyVAnqM2sO%2Fb7tUpzjvBFDdlzODDa%2BNfWBjqlAU5PD4MKUl4jRjyqs2eLixPtNSDfs8JJ5yNrOCQttJ3V%2BSpWCn%2FCIgzNiUO4NxN%2FvmIvfrINa%2FFqNYBfYxcqOi%2F4BENYtrDvIArMZ8Jrvcz12mrdr9Du35p8cUQFd7Ew%2BdkzkJ7ulZ7ivh3cVrW1HjjZOTSv%2BjzZDrTQ97RbxGZkss8ABeJn7bmOZl%2B6kyiqQJuLZHwGzP0xAd79CODL3wYQeHpmDg%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=96c8a38c3bada852d6ee99f5717b6d2c8b7607c484f09cd20c3346b1cf101518"
+   },
+   "createdAt": "7 days",
+   "lastActive": "3 days",
+   "description": "## **🧠 About Coris**\n\nCoris is the AI platform for risk and financial operations. Platforms, marketplaces, payment providers, and banks - GoFundMe, Clio, Cherry, and a growing list - use Coris to onboard merchants faster, monitor them continuously, and act on fraud without adding headcount. One customer described us as \"Cursor + Lovable for risk teams.\"\n\nWe're backed by Y Combinator, Lux Capital, and Pathlight, founded by payments-domain experts, and growing quickly on customer pull. We're a small team; this hire owns a large share of the backend.\n\n## **👥 Who you'll work with**\n\nCoris was started by Vinodh (CEO) and Shyam (CTO). We've each spent 20+ years in fraud and risk management, running risk engineering, operations and product teams at Google, eBay, PayPal and WePay. You'll work directly with both of us in Palo Alto.\n\n## **🚀 Why this role matters**\n\nEvery Coris decision runs on data we pull from payment processors and platforms: Stripe, Adyen, Fiserv, TSYS, Repay, and more, over APIs, webhooks, and SFTP file feeds - hundreds of millions of events a month, billions of rows in Postgres. On top of that sits a signals and rules engine, an account graph, and the partner-facing API our customers build on.\n\nHere's the honest version of the work. Files arrive out of order over SFTP. One processor sends dates in UTC, another in the merchant's local time, and neither says which. A processor's decline code lives in a different column than the spec says. A webhook ships malformed JSON at 2am. A backfill worker runs out of memory on a 40B-row table. A customer's risk lead says \"our numbers look off\" and needs an answer today.\n\nWe're hiring the engineer who will own all of that end-to-end, and who thinks it's the interesting part - because every integration we make reliably is one a competitor hasn't, and that's the moat. Getting the boring work right every time is how enduring companies are built!\n\n## **🥷 What you'll do**\n\n* **Own processor and platform integrations.** Build and operate ingestion from Stripe, Adyen, Fiserv, TSYS, Repay, and new processors as we sign them: APIs, webhooks, and batch file feeds. Make them correct, idempotent, observable, and PCI-safe.\n* **Own the partner API and customer-specific work.** Extend the v2 API, build per-customer configuration and signals, and work directly with customers' risk and ops teams to turn a vague report into a fix, fast.\n* **Build the risk engine.** Add signals and rules to the DAG engine that scores merchants and transactions; design Postgres schemas, indexes, partitions, and aggregations that stay fast at billions of rows.\n* **Run it in prod.** Celery workers, backfills, deadlocks, circuit breakers, latency, Sentry monitoring. You ship it, you own it.\n* **Use AI everywhere it earns its place.** Coding agents for first drafts and refactors, AI review on every PR, and LLMs inside the product (dispute agents, document parsing, structured extraction). You'll also help set the team's standards for how we use these tools.\n* **\\~10–20% product-facing** TypeScript/Next.js when a feature needs it.\n\n## **📅 Your first 90 days**\n\n* **Week 1:** your first PR is merged and running in production.\n* **30 days:** you're picking up substantial features and shipping them.\n* **60 days:** you're taking on harder problems and building real depth in one or more parts of the system, like processor integrations, the risk engine or the partner API.\n* **90 days:** you're the go-to person for a significant part of the platform.\n\n## **✅ You may be a fit if**\n\nNobody matches every line below. If most of it sounds like you and the work above is the kind you want to do, we'd like to hear from you.\n\n* **A few years shipping production Python backends** (Django/Postgres or close; 3+ years is a guide, not a cutoff). Ideally you've owned a system in production through growth: schema changes on large tables, concurrency and locking bugs, backfills, on-call. You're at home in SQL and can read a query plan, or want to get very good at it.\n* **An AI-native way of working.** You reach for coding agents (Claude Code, Codex, Cursor or similar) by default, and you've built something with LLMs that people use, at work or on your own. If you're earlier on this curve but moving fast, tell us what you've built.\n* **Judgment about what AI produces.** You have a feel for which changes to let an agent run with (test scaffolding, a well-specified refactor, a migration you can diff) and which to read line by line (anything touching money, card data or PII, a schema change on a huge table, locking and concurrency). You want to understand every line of a diff before it ships, and you treat AI review comments as input, not instruction.\n* **You like the schlep.** Integrations, escalations, backfills, file formats from 1995. You see the pattern in the mess and don't burn out on it, because you understand why it's the product.\n* **Comfortable with customers.** You'd be at ease, or keen to get there, on a call with a customer's risk team, saying \"give me an hour,\" and coming back with the answer.\n* **Committed to the startup outcome.** You want equity that matters and you work like an owner: comfortable with ambiguity, with long weeks when it counts, and with being in the room 5 days a week.\n\n## **🙏 Nice to have**\n\n* Payments, merchant risk, underwriting, or fintech background (Stripe, Adyen, Plaid, Ramp, a PayFac or ISO).\n* Prior early-stage startup experience.\n* Built a rules engine, signal pipeline, entity-linking / graph system, or feature store.\n* SFTP and batch-file integrations, fixed-width or legacy formats, PCI-scoped data handling.\n* Shipped LLM features in production - structured extraction, agents with tools, evals.\n\n## **🤝 How we work**\n\n* Bias toward action and measurable impact; we ship fast, measure, and iterate with real customer feedback.\n* Everyone owns their code in prod.\n* AI-first development: agents write, humans own. Every PR gets an AI review and a human one if necessary.\n* In-person, 5 days a week in Palo Alto. Like any high-growth startup, we go well beyond the usual 40–50 hours a week.",
+   "interview_process": "## \n\n1. Initial screen (60 min)\n2. Live pair-building with your AI tooling (90 min) - bring your own setup; we care as much about how you direct the agent and what you verify as about what gets built\n3. Onsite: integration/system design, a code-judgment exercise (review an AI-generated PR against a realistic codebase), and a conversation with the CEO and CTO"
+  },
+  "relatedJobs": [
+   {
+    "id": 75855,
+    "title": "Full-Stack Software Engineer",
+    "url": "/companies/greenboard/jobs/LnGJvRx-full-stack-software-engineer",
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D75855&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=26882",
+    "location": "New York, NY, US",
+    "askUs": true,
+    "type": "Full-time",
+    "role": "eng",
+    "roleSpecificType": "Backend",
+    "prettyRole": "Engineering",
+    "salaryRange": "$140K - $180K",
+    "equityRange": "",
+    "minExperience": "Any (new grads ok)",
+    "minSchoolYear": null,
+    "visa": "US citizen/visa only",
+    "skills": [],
+    "isIncomplete": false,
+    "companyUrl": "/companies/greenboard",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/b27383428d763a236956940e76e892fc851162b4.png",
+    "companyName": "Greenboard",
+    "companyBatchName": "W24",
+    "companyOneLiner": "Modern OS for the financial back office. ",
+    "hiringManager": null,
+    "createdAt": "over 1 year",
+    "lastActive": "25 days"
+   },
+   {
+    "id": 99743,
+    "title": "Forward Deployed Engineer",
+    "url": "/companies/numeral/jobs/drO1dy8-forward-deployed-engineer",
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D99743&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=26882",
+    "location": "San Francisco, CA, US / New York, NY, US / Remote (US)",
+    "askUs": true,
+    "type": "Full-time",
+    "role": "eng",
+    "roleSpecificType": "Backend",
+    "prettyRole": "Engineering",
+    "salaryRange": "",
+    "equityRange": "",
+    "minExperience": "Any (new grads ok)",
+    "minSchoolYear": null,
+    "visa": "US citizen/visa only",
+    "skills": [],
+    "isIncomplete": false,
+    "companyUrl": "/companies/numeral",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/7a499f6b96256283dc99bacb914267102619b349.png",
+    "companyName": "Numeral",
+    "companyBatchName": "W23",
+    "companyOneLiner": "The AI-native sales tax solution.",
+    "hiringManager": null,
+    "createdAt": "3 months",
+    "lastActive": "11 days"
+   }
+  ],
+  "signupUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D116108&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=26882",
+  "companyUrl": "https://www.ycombinator.com/companies/coris",
+  "createProfileUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication&defaults%5BsignUpActive%5D=true",
+  "signedIn": false,
+  "showDirectApply": true,
+  "waasDirectoryUrl": "https://www.workatastartup.com/companies",
+  "customQuestions": [
+   {
+    "id": 2377,
+    "question_type": "long_text",
+    "label": "What's the hardest problem you've solved? Explain.",
+    "required": true,
+    "archived_at": null,
+    "options": []
+   }
+  ]
+ }
+}

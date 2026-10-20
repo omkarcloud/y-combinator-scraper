@@ -1,0 +1,152 @@
+@baseUrl = http://127.0.0.1:6002
+# @baseUrl = https://y-combinator-scraper.omkar.cloud
+
+# ========================================
+# COMPANIES
+# ========================================
+
+### Company search (Algolia: keyword over name / one-liner / description / tags)
+GET {{baseUrl}}/y-combinator/companies/search?query=ai fintech&per_page=5
+
+### Company search (batch + hiring + industry; batch accepts W24 / Winter 2024 / X25, comma lists)
+GET {{baseUrl}}/y-combinator/companies/search?batch=W24,S23&is_hiring=true&industry=Fintech&per_page=5
+
+### Company search (newest first, since a date; team size; status; region; tag; sub-industry)
+GET {{baseUrl}}/y-combinator/companies/search?sort=newest&launched_since=90d&per_page=5
+
+### Company search (public companies with 1000+ employees)
+GET {{baseUrl}}/y-combinator/companies/search?team_size_min=1000&status=public
+
+### Company search (UK SaaS infrastructure startups)
+GET {{baseUrl}}/y-combinator/companies/search?region=United Kingdom&tag=SaaS&subindustry=Infrastructure
+
+### Top companies (YC's top-company badge)
+GET {{baseUrl}}/y-combinator/companies/top?per_page=10
+
+### New companies (launched in the directory in the last 7 days)
+GET {{baseUrl}}/y-combinator/companies/new?since=7d&per_page=10
+
+### Company details (slug, numeric id or any YC / Work at a Startup link)
+GET {{baseUrl}}/y-combinator/companies/details?company=airbnb
+
+### Company details (by link)
+GET {{baseUrl}}/y-combinator/companies/details?company=https://www.ycombinator.com/companies/coris
+
+### Company open jobs
+GET {{baseUrl}}/y-combinator/companies/jobs?company=coris
+
+### Company founders (profile bios + index facts + past companies)
+GET {{baseUrl}}/y-combinator/companies/founders?company=coris
+
+### Company launches (full Launch YC posts)
+GET {{baseUrl}}/y-combinator/companies/launches?company=asakana
+
+### Browse the curated lists (industry and/or location slug, 50 a page, socials + founding year)
+GET {{baseUrl}}/y-combinator/companies/browse?industry=fintech&location=san-francisco-bay-area&page=2
+
+### Browse (hiring only)
+GET {{baseUrl}}/y-combinator/companies/browse?industry=healthcare&hiring_only=true
+
+### Browse (by location)
+GET {{baseUrl}}/y-combinator/companies/browse?location=india
+
+### Directory dump (YC's open API, 25 a page, for bulk export)
+GET {{baseUrl}}/y-combinator/companies/directory?page=1
+
+### Directory dump (filtered: 20 a page)
+GET {{baseUrl}}/y-combinator/companies/directory?batch=W24&is_hiring=true
+
+### Highlight lists (women / black / hispanic-latino founders)
+GET {{baseUrl}}/y-combinator/companies/highlights?group=women-founders&batch=W24&per_page=10
+
+# ========================================
+# FOUNDERS
+# ========================================
+
+### Founder search (keyword)
+GET {{baseUrl}}/y-combinator/founders/search?query=brian chesky
+
+### Founder search (batch + title + industry + region)
+GET {{baseUrl}}/y-combinator/founders/search?batch=W24&title=CTO&per_page=10
+
+### Founder details (slug, numeric id or /founders/<slug> link)
+GET {{baseUrl}}/y-combinator/founders/details?founder=brian-chesky
+
+### Founder details (by id)
+GET {{baseUrl}}/y-combinator/founders/details?founder=21981
+
+# ========================================
+# JOBS (Work at a Startup)
+# ========================================
+
+### Job search (role + location; role: engineering, design, product, science, sales, marketing, support, operations, recruiting, finance, legal)
+GET {{baseUrl}}/y-combinator/jobs/search?role=engineering&location=san francisco&per_page=10
+
+### Job search (keyword across every role page + the site's own relevance hits)
+GET {{baseUrl}}/y-combinator/jobs/search?query=python&per_page=10
+
+### Job search (remote full-time, sorted by salary)
+GET {{baseUrl}}/y-combinator/jobs/search?is_remote=true&job_type=full-time&sort=salary&has_salary=true
+
+### Job search (by company batch, skill, visa, experience)
+GET {{baseUrl}}/y-combinator/jobs/search?batch=S24,W25&skill=Python,TypeScript&visa=sponsor&min_experience=3
+
+### Job details (YC posting link, <company>/<hash>, a posting id or a workatastartup.com link)
+GET {{baseUrl}}/y-combinator/jobs/details?job=https://www.ycombinator.com/companies/coris/jobs/h0nDly8-backend-engineer-ai-native-risk-infrastructure-integrations
+
+### Job details (by id)
+GET {{baseUrl}}/y-combinator/jobs/details?job=116108
+
+# ========================================
+# LAUNCHES (Launch YC)
+# ========================================
+
+### Launches feed (newest first)
+GET {{baseUrl}}/y-combinator/launches/search?per_page=10
+
+### Launches search (keyword + batch)
+GET {{baseUrl}}/y-combinator/launches/search?query=robot&batch=F26
+
+### Launch details (slug or link; full markdown body, author, votes)
+GET {{baseUrl}}/y-combinator/launches/details?launch=VrR-asakana-automating-sales-and-the-entire-back-office-for-food-distributors
+
+# ========================================
+# PARTNERS / BLOG / LIBRARY
+# ========================================
+
+### Partners and staff (grouped; filter by group / keyword)
+GET {{baseUrl}}/y-combinator/partners/list?group=partners
+
+### Partner details (slug or /people/<slug> link)
+GET {{baseUrl}}/y-combinator/partners/details?partner=garry-tan
+
+### Blog posts (10 a page; by author or tag)
+GET {{baseUrl}}/y-combinator/blog/posts?page=1
+
+### Blog posts (by author)
+GET {{baseUrl}}/y-combinator/blog/posts?author=garry
+
+### Blog post details (slug or link; HTML + text)
+GET {{baseUrl}}/y-combinator/blog/details?post=welcome-vivian-and-raphael
+
+### Library search (videos / essays; keyword, category, series, author; sort relevance | newest | views)
+GET {{baseUrl}}/y-combinator/library/search?query=sam altman&per_page=10
+
+### Library search (most viewed)
+GET {{baseUrl}}/y-combinator/library/search?sort=views&per_page=10
+
+### Library article details (with transcript)
+GET {{baseUrl}}/y-combinator/library/details?article=dx-ai-safety-fact-vs-fiction
+
+# ========================================
+# META
+# ========================================
+
+### Every filter value (batches, industries, tags, regions, statuses, founder titles, job roles / locations) with counts
+GET {{baseUrl}}/y-combinator/filters
+
+### Batches (company + founder counts, current batch, application deadline)
+GET {{baseUrl}}/y-combinator/batches
+
+### Directory-wide stats
+GET {{baseUrl}}/y-combinator/stats

@@ -1,0 +1,139 @@
+{
+ "component": "jobs/public/pages/JobDetailV2Page",
+ "props": {
+  "flashAlertsHtml": null,
+  "flash": {
+   "alert": null,
+   "success": null,
+   "info": null
+  },
+  "footerLogoPath": "//bookface-static.ycombinator.com/assets/waas/workatastartup_logo_white-fd90bda8fa88dcee932508c8c3edcb6b0c0c06901e773171dd96549a577c4a1b.svg",
+  "variantChrome": true,
+  "job": {
+   "id": 116108,
+   "title": "Backend Engineer (AI-Native) — Risk Infrastructure & Integrations",
+   "salaryRange": "$160 - $175",
+   "equityRange": "0.25% - 0.50%",
+   "location": "Palo Alto, CA, US",
+   "jobType": "Full-time",
+   "sponsorsVisa": "US citizen/visa only",
+   "minExperience": "3+ years",
+   "skills": [
+    "Django",
+    "JavaScript",
+    "PostgreSQL",
+    "Python",
+    "TypeScript"
+   ],
+   "descriptionHtml": "<h2><strong>🧠 About Coris</strong></h2>\n<p>Coris is the AI platform for risk and financial operations. Platforms, marketplaces, payment providers, and banks - GoFundMe, Clio, Cherry, and a growing list - use Coris to onboard merchants faster, monitor them continuously, and act on fraud without adding headcount. One customer described us as \"Cursor + Lovable for risk teams.\"</p>\n<p>We're backed by Y Combinator, Lux Capital, and Pathlight, founded by payments-domain experts, and growing quickly on customer pull. We're a small team; this hire owns a large share of the backend.</p>\n<h2><strong>👥 Who you'll work with</strong></h2>\n<p>Coris was started by Vinodh (CEO) and Shyam (CTO). We've each spent 20+ years in fraud and risk management, running risk engineering, operations and product teams at Google, eBay, PayPal and WePay. You'll work directly with both of us in Palo Alto.</p>\n<h2><strong>🚀 Why this role matters</strong></h2>\n<p>Every Coris decision runs on data we pull from payment processors and platforms: Stripe, Adyen, Fiserv, TSYS, Repay, and more, over APIs, webhooks, and SFTP file feeds - hundreds of millions of events a month, billions of rows in Postgres. On top of that sits a signals and rules engine, an account graph, and the partner-facing API our customers build on.</p>\n<p>Here's the honest version of the work. Files arrive out of order over SFTP. One processor sends dates in UTC, another in the merchant's local time, and neither says which. A processor's decline code lives in a different column than the spec says. A webhook ships malformed JSON at 2am. A backfill worker runs out of memory on a 40B-row table. A customer's risk lead says \"our numbers look off\" and needs an answer today.</p>\n<p>We're hiring the engineer who will own all of that end-to-end, and who thinks it's the interesting part - because every integration we make reliably is one a competitor hasn't, and that's the moat. Getting the boring work right every time is how enduring companies are built!</p>\n<h2><strong>🥷 What you'll do</strong></h2>\n<ul>\n<li>\n<strong>Own processor and platform integrations.</strong> Build and operate ingestion from Stripe, Adyen, Fiserv, TSYS, Repay, and new processors as we sign them: APIs, webhooks, and batch file feeds. Make them correct, idempotent, observable, and PCI-safe.</li>\n<li>\n<strong>Own the partner API and customer-specific work.</strong> Extend the v2 API, build per-customer configuration and signals, and work directly with customers' risk and ops teams to turn a vague report into a fix, fast.</li>\n<li>\n<strong>Build the risk engine.</strong> Add signals and rules to the DAG engine that scores merchants and transactions; design Postgres schemas, indexes, partitions, and aggregations that stay fast at billions of rows.</li>\n<li>\n<strong>Run it in prod.</strong> Celery workers, backfills, deadlocks, circuit breakers, latency, Sentry monitoring. You ship it, you own it.</li>\n<li>\n<strong>Use AI everywhere it earns its place.</strong> Coding agents for first drafts and refactors, AI review on every PR, and LLMs inside the product (dispute agents, document parsing, structured extraction). You'll also help set the team's standards for how we use these tools.</li>\n<li>\n<strong>~10–20% product-facing</strong> TypeScript/Next.js when a feature needs it.</li>\n</ul>\n<h2><strong>📅 Your first 90 days</strong></h2>\n<ul>\n<li>\n<strong>Week 1:</strong> your first PR is merged and running in production.</li>\n<li>\n<strong>30 days:</strong> you're picking up substantial features and shipping them.</li>\n<li>\n<strong>60 days:</strong> you're taking on harder problems and building real depth in one or more parts of the system, like processor integrations, the risk engine or the partner API.</li>\n<li>\n<strong>90 days:</strong> you're the go-to person for a significant part of the platform.</li>\n</ul>\n<h2><strong>✅ You may be a fit if</strong></h2>\n<p>Nobody matches every line below. If most of it sounds like you and the work above is the kind you want to do, we'd like to hear from you.</p>\n<ul>\n<li>\n<strong>A few years shipping production Python backends</strong> (Django/Postgres or close; 3+ years is a guide, not a cutoff). Ideally you've owned a system in production through growth: schema changes on large tables, concurrency and locking bugs, backfills, on-call. You're at home in SQL and can read a query plan, or want to get very good at it.</li>\n<li>\n<strong>An AI-native way of working.</strong> You reach for coding agents (Claude Code, Codex, Cursor or similar) by default, and you've built something with LLMs that people use, at work or on your own. If you're earlier on this curve but moving fast, tell us what you've built.</li>\n<li>\n<strong>Judgment about what AI produces.</strong> You have a feel for which changes to let an agent run with (test scaffolding, a well-specified refactor, a migration you can diff) and which to read line by line (anything touching money, card data or PII, a schema change on a huge table, locking and concurrency). You want to understand every line of a diff before it ships, and you treat AI review comments as input, not instruction.</li>\n<li>\n<strong>You like the schlep.</strong> Integrations, escalations, backfills, file formats from 1995. You see the pattern in the mess and don't burn out on it, because you understand why it's the product.</li>\n<li>\n<strong>Comfortable with customers.</strong> You'd be at ease, or keen to get there, on a call with a customer's risk team, saying \"give me an hour,\" and coming back with the answer.</li>\n<li>\n<strong>Committed to the startup outcome.</strong> You want equity that matters and you work like an owner: comfortable with ambiguity, with long weeks when it counts, and with being in the room 5 days a week.</li>\n</ul>\n<h2><strong>🙏 Nice to have</strong></h2>\n<ul>\n<li>Payments, merchant risk, underwriting, or fintech background (Stripe, Adyen, Plaid, Ramp, a PayFac or ISO).</li>\n<li>Prior early-stage startup experience.</li>\n<li>Built a rules engine, signal pipeline, entity-linking / graph system, or feature store.</li>\n<li>SFTP and batch-file integrations, fixed-width or legacy formats, PCI-scoped data handling.</li>\n<li>Shipped LLM features in production - structured extraction, agents with tools, evals.</li>\n</ul>\n<h2><strong>🤝 How we work</strong></h2>\n<ul>\n<li>Bias toward action and measurable impact; we ship fast, measure, and iterate with real customer feedback.</li>\n<li>Everyone owns their code in prod.</li>\n<li>AI-first development: agents write, humans own. Every PR gets an AI review and a human one if necessary.</li>\n<li>In-person, 5 days a week in Palo Alto. Like any high-growth startup, we go well beyond the usual 40–50 hours a week.</li>\n</ul>\n",
+   "interviewProcessHtml": "<h2></h2>\n<ol>\n<li>Initial screen (60 min)</li>\n<li>Live pair-building with your AI tooling (90 min) - bring your own setup; we care as much about how you direct the agent and what you verify as about what gets built</li>\n<li>Onsite: integration/system design, a code-judgment exercise (review an AI-generated PR against a realistic codebase), and a conversation with the CEO and CTO</li>\n</ol>\n"
+  },
+  "company": {
+   "name": "Coris",
+   "slug": "coris",
+   "batch": "S22",
+   "description": "AI risk and ops platform for Payment Processors, Banks, SaaS platforms and Marketplaces",
+   "hiringDescriptionHtml": "<p>Coris is building the AI layer for payments risk and operations. We work with the most ambitious platforms, marketplaces, and payment providers around the globe such as GoFundMe, Kajabi, Clio and Cherry to automate and accelerate merchant onboarding, monitoring, and decision-making. What risk teams only imagined two years ago, Coris is delivering today with our risk platform and AI agents.</p>\n<p>We’re backed by Y Combinator, Lux Capital, Pathlight Ventures, and other world-class investors.</p>\n",
+   "techDescriptionHtml": "<p>Work at Coris involves extracting valuable insights from reams of structured and unstructured data from hundreds of sources. We employ deep learning based NLP and Sentiment Analysis to extract risk and credit signals, and present them in an enhanced format to our users. Our work involves, among others, crawling the web and scraping data on the web for useful information about small businesses.</p>\n<p>The technology stack is built on Python, Django, HTML Javascript, and React. We use Airflow for batch processing and Kafka for async &amp; near real-time processing. On the ML side, we use PyTorch, Scikit-learn, Huggingface Transformers etc. The dockerized application is hosted on AWS.</p>\n",
+   "logoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/f8d68f694a6b7f9bb0fb7015ac9814c591f45f5d.png",
+   "url": "https://coris.ai/",
+   "twitterUrl": "https://twitter.com/CorisInc",
+   "facebookUrl": null,
+   "location": "San Francisco",
+   "teamSize": 10,
+   "industry": "B2B -> Infrastructure",
+   "industries": [
+    "B2B Software and Services",
+    "Infrastructure"
+   ],
+   "founders": [
+    {
+     "name": "Shyam Maddali",
+     "avatarUrl": "https://bookface-images.s3.amazonaws.com/avatars/4716428289cef5c1212db1017901c9efa78c039f.jpg",
+     "bio": "ex-WePay, ex-eBay",
+     "pastCompanies": "Engineer at Various Startups, Engineer at Wipro Limited, CEO at FinBuddy",
+     "linkedin": "https://www.linkedin.com/in/shyammaddali/"
+    },
+    {
+     "name": "Vinodh Poyyapakkam",
+     "avatarUrl": "https://bookface-images.s3.amazonaws.com/avatars/92775bbd1f7783cd2ef5767994ce17309a74124e.jpg",
+     "bio": "Payments Fraud, SMB, Risk & Compliance. Prev: Google, WePay, Paysafe, PayPal, Accenture",
+     "pastCompanies": "Consultant at Accenture, Senior Strategy Consultant at Austin Logistics Inc., Head of Risk at Paysafe",
+     "linkedin": "https://www.linkedin.com/in/vinodhpo/"
+    }
+   ],
+   "jobs": []
+  },
+  "otherJobs": [
+   {
+    "id": 100286,
+    "title": "Chief of Staff",
+    "location": "Palo Alto, CA, US",
+    "jobType": "Full-time",
+    "salaryRange": "$120K - $150K",
+    "equityRange": "0.40% - 0.70%",
+    "minExperience": "3+ years"
+   }
+  ],
+  "similarJobs": [
+   {
+    "id": 92260,
+    "title": "Senior Backend Software Engineer",
+    "jobType": "Full-time",
+    "location": "New York, NY, US",
+    "roleType": "Backend",
+    "salary": "$200K - $220K",
+    "companyName": "Tennr",
+    "companySlug": "tennr",
+    "companyBatch": "W23",
+    "companyOneLiner": "Fast, Transparent Patient Experiences",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/f3807f5ec8c0c63e791201050e45457f0ca05759.png",
+    "companyLastActiveAt": null,
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D92260&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=27811"
+   },
+   {
+    "id": 85034,
+    "title": "Software Engineer",
+    "jobType": "Full-time",
+    "location": "Pune, MH, IN / Pune, Maharashtra, IN",
+    "roleType": "Full stack",
+    "salary": "₹800K - ₹1M INR",
+    "companyName": "Hemut",
+    "companySlug": "hemut",
+    "companyBatch": "P25",
+    "companyOneLiner": "AI-powered operating system for trucking companies.",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/0130d4e41d286011dbbf71e01781948525f98d90.png",
+    "companyLastActiveAt": null,
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D85034&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=30519"
+   },
+   {
+    "id": 64075,
+    "title": "Founding AI Engineer",
+    "jobType": "Full-time",
+    "location": "Remote (US)",
+    "roleType": "Full stack",
+    "salary": "$80K - $180K",
+    "companyName": "Delfino AI",
+    "companySlug": "delfino-ai",
+    "companyBatch": "S22",
+    "companyOneLiner": "Generative AI for administrative automation in healthcare ",
+    "companyLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/0ca7311a440acc157fc34997e9d9bbdd9f1873fd.png",
+    "companyLastActiveAt": "6 months ago",
+    "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D64075&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=27206"
+   }
+  ],
+  "applyUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication%3Fsignup_job_id%3D116108&defaults%5BsignUpActive%5D=true&defaults%5Bwaas_company%5D=26882",
+  "signupUrl": "https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplication&defaults%5BsignUpActive%5D=true",
+  "loginUrl": "https://account.ycombinator.com/magic?continue=https%3A%2F%2Fwww.workatastartup.com%2Fjobs%2F116108",
+  "customQuestions": [
+   {
+    "id": 2377,
+    "question_type": "long_text",
+    "label": "What's the hardest problem you've solved? Explain.",
+    "required": true,
+    "archived_at": null,
+    "options": []
+   }
+  ]
+ }
+}

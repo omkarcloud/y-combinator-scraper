@@ -1,0 +1,106 @@
+{
+ "companies": [
+  {
+   "id": 29533,
+   "name": "Indemni",
+   "slug": "indemni",
+   "website": "http://www.indemni.com",
+   "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/5e66c11bb21c9a5ccdcf4a475ed7e48693b41f2b.png",
+   "oneLiner": "Cargo Theft and Fraud Prevention Platform",
+   "longDescription": "We are building a safer supply chain. Cargo Theft has been increasing yearly, and the supply chain industry is urgently looking for ways to solve this. Using experience fighting fraud at the largest delivery marketplaces and logistics tech companies, we are building solutions to stop Cargo Theft and improve profit margins and revenue for warehouses and freight brokers.",
+   "teamSize": 7,
+   "url": "https://www.ycombinator.com/companies/indemni",
+   "batch": "W24",
+   "tags": [
+    "Identity",
+    "Logistics",
+    "Supply Chain",
+    "Fraud Prevention",
+    "Fraud Detection"
+   ],
+   "status": "Active",
+   "industries": [
+    "B2B",
+    "Supply Chain and Logistics"
+   ],
+   "regions": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote"
+   ],
+   "locations": [
+    "San Francisco"
+   ],
+   "badges": [
+    "isHiring"
+   ]
+  },
+  {
+   "id": 29527,
+   "name": "ParcelBio",
+   "slug": "parcelbio",
+   "website": "https://parcelbio.com/",
+   "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/74f762bd0f8856c1dbe4d716afa6585e44f03870.png",
+   "oneLiner": "Elevated mRNA for transformative medicines.",
+   "longDescription": "ParcelBio is engineering a new class of mRNA medicines designed to deliver unprecedented potency and durability. Its proprietary APEXm™ platform uses novel RNA domains to enhance protein expression and extend activity, enabling therapies that reach the thresholds required for meaningful, and potentially curative, clinical outcomes. The company is advancing programs in autoimmune disease, oncology, and encoded protein therapeutics.",
+   "teamSize": 6,
+   "url": "https://www.ycombinator.com/companies/parcelbio",
+   "batch": "W24",
+   "tags": [
+    "Gene Therapy",
+    "Synthetic Biology",
+    "Biotech",
+    "Therapeutics",
+    "Drug discovery"
+   ],
+   "status": "Active",
+   "industries": [
+    "Healthcare",
+    "Therapeutics"
+   ],
+   "regions": [
+    "United States of America",
+    "America / Canada"
+   ],
+   "locations": [
+    "San Francisco"
+   ],
+   "badges": []
+  },
+  {
+   "id": 29522,
+   "name": "Marr Labs",
+   "slug": "marr-labs",
+   "website": "https://www.marrlabs.com/",
+   "smallLogoUrl": "https://bookface-images.s3.amazonaws.com/small_logos/78a360f7a0cb054dd1d879714a91edbac53734cc.png",
+   "oneLiner": "AI-voice agents that are indistinguishable from humans.",
+   "longDescription": "Marr Labs is making AI-voice agents that are indistinguishable from humans. Han and Dave previously created speech tech company Vlingo that powered the first Siri app and was acquired for $225M. \r\n\r\n\r\nNow they are taking voice to the next level by making AI-voice agents that can handle virtually any phone-based job, from answering calls to schedule appointments to call center sales and support jobs—all at a fraction of the cost of a human agent.\r\n \r\n\r\nIn the US alone, businesses handle 17 billion calls a year at an average cost of $5 per call–an $85 billion addressable market. ",
+   "teamSize": 9,
+   "url": "https://www.ycombinator.com/companies/marr-labs",
+   "batch": "W24",
+   "tags": [
+    "AI",
+    "Conversational AI",
+    "AI Assistant"
+   ],
+   "status": "Active",
+   "industries": [
+    "B2B"
+   ],
+   "regions": [
+    "United States of America",
+    "America / Canada",
+    "Remote",
+    "Partly Remote"
+   ],
+   "locations": [
+    "San Francisco"
+   ],
+   "badges": []
+  }
+ ],
+ "nextPage": "https://api.ycombinator.com/v0.1/companies?batch=W24&page=2",
+ "page": 1,
+ "totalPages": 13
+}

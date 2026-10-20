@@ -1,0 +1,146 @@
+{
+ "component": "ArticlesLibraryShowPage",
+ "props": {
+  "article": {
+   "id": 2477,
+   "slug": "dx-ai-safety-fact-vs-fiction",
+   "title": "AI Safety Fact vs. Fiction",
+   "content": "",
+   "ranking": 881,
+   "root_id": 176,
+   "author": "Y Combinator",
+   "authors": [],
+   "description": "Stanford professors Clark Barrett and Mykel Kochenderfer discuss the science of AI safety, including automated reasoning, formal verification, stress-testing language models, and lessons from aviation safety.",
+   "sus_curriculum": false,
+   "link": "https://www.youtube.com/watch?v=X7oI4Umt3DU",
+   "transcript": "Host (presenter): Do tonight. Alright, there you go. That's better. Welcome to uh YC AI Safety Club. I've been doing AI, I guess, since about 2012, and AI safety has always been a concern if you're doing self-driving car or any uh safety critical system, as some would call it. Um, and so I've been working on some semblance of of AI safety and even at focal when we're rolling out new thetas um you ",
+   "slides": null,
+   "categories": [],
+   "categories_for_display": [],
+   "feature_score": 0,
+   "youtube_id": "X7oI4Umt3DU",
+   "youtube_view_count": 23638,
+   "spotify_id": null,
+   "carousel_sort_order": null,
+   "created_at": "2026-10-17T14:00:30.000Z",
+   "video_chapters": [
+    [
+     0,
+     "Science fiction vs. science fact"
+    ],
+    [
+     272,
+     "Engineering problem, or P(doom)"
+    ],
+    [
+     364,
+     "What actually happened at Hugging Face"
+    ],
+    [
+     473,
+     "Where \"10% in 10 years\" comes from"
+    ],
+    [
+     681,
+     "The real risk: open weights in the wrong hands"
+    ],
+    [
+     1045,
+     "Clark Barrett: when AI met automated reasoning"
+    ],
+    [
+     1235,
+     "CSLib: proving code correct in Lean"
+    ],
+    [
+     1472,
+     "From English spec to verified code in one click"
+    ],
+    [
+     1675,
+     "Mykel Kochenderfer: how do we know a system is safe"
+    ],
+    [
+     1931,
+     "Adaptive stress testing, from aircraft to LLMs"
+    ],
+    [
+     2217,
+     "Verifying neural networks"
+    ],
+    [
+     2430,
+     "Runtime monitoring and BetterBench"
+    ],
+    [
+     2633,
+     "Panel: reacting to the past three weeks"
+    ],
+    [
+     2755,
+     "An NTSB for AI"
+    ],
+    [
+     3138,
+     "Is cybersecurity solvable in five years"
+    ],
+    [
+     3300,
+     "If you were CISO of Bank of America"
+    ],
+    [
+     3786,
+     "The Swiss cheese model"
+    ],
+    [
+     3943,
+     "Audience Q&A"
+    ]
+   ],
+   "video_duration": 5827,
+   "cover_photo": "/media?key=user_uploads%2Fthumbnails%2Fa35a380d-3e76-46ab-a46a-7e2ffda2c20f&upload_type=article",
+   "cover_photo_thumbnail": "/media?key=user_uploads%2Fthumbnails%2Fa35a380d-3e76-46ab-a46a-7e2ffda2c20f&upload_type=article",
+   "series_name": "Paper Club",
+   "bookmarked": null,
+   "video_progress_seconds": null,
+   "title_in_thumbnail": false,
+   "view_access": "all_founders"
+  },
+  "editUrl": null,
+  "relatedArticles": [
+   {
+    "id": 1344,
+    "slug": "Lg-why-vertical-llm-agents-are-the-new-1-billion-saas-opportunities",
+    "title": "Why Vertical LLM Agents Are The New $1 Billion SaaS Opportunities",
+    "youtube_id": "eBVi_sLaYsc",
+    "spotify_id": null,
+    "author": "Y Combinator",
+    "description": "In this episode of the Lightcone, the hosts sit down with YC alum Jake Heller, the co-founder and CEO of Casetext (which sold to Thomson Reuters for $650 million in 2023) to discuss what it takes to build a successful vertical AI company.",
+    "cover_photo": null,
+    "title_in_thumbnail": false,
+    "youtube_view_count": 446379,
+    "video_duration": 2226,
+    "video_progress_seconds": null,
+    "created_at": "2024-10-04T14:00:41.000Z"
+   }
+  ],
+  "nextArticle": {
+   "id": 2279,
+   "slug": "al-what-if-we-stopped-using-gpus",
+   "title": "What If We Stopped Using GPUs?",
+   "youtube_id": "xc2FTBGRSJo",
+   "spotify_id": null,
+   "author": "Y Combinator",
+   "description": "Researchers explore alternatives to GPUs, including optical computing, neuromorphic architectures, and computation with living neurons.",
+   "cover_photo": "/media?key=user_uploads%2F89898%2F2ed5ee9e-d9b2-42bb-9539-06c3a338ce98&upload_type=article",
+   "title_in_thumbnail": true,
+   "youtube_view_count": 73811,
+   "video_duration": 4835,
+   "video_progress_seconds": null,
+   "created_at": "2026-10-02T14:00:19.000Z"
+  },
+  "carouselName": "Paper Club",
+  "videoProgressSeconds": null,
+  "userSignedIn": false
+ }
+}
