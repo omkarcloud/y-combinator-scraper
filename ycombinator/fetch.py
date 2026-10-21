@@ -33,12 +33,15 @@ Surfaces (all public, all read without a session):
               — the bare request answers 406); the directories behind them
               redirect to login and are not used.
 
-Blocks: none seen. If the pod's egress ever starts answering 403/429 (or
-HTML where JSON is expected), a worker moves its session to a sticky
-residential exit (config.ycombinator_fallback_proxy()) for
-config.YCOMBINATOR_BLOCK_COOLDOWN seconds — the lever/ashby shape. The
-headful patchright browser is deliberately NOT built: there is no
-challenge to clear.
+Egress: in grow every session leaves through a sticky residential proxy exit
+(config.ycombinator_proxy, YCOMBINATOR_REQUIRE_PROXY) — ycombinator.com and
+workatastartup.com are never contacted from the server's own IP; with no
+proxy the call fails instead of going direct. The open-source kit sets
+YCOMBINATOR_REQUIRE_PROXY = False, so it runs direct unless YCOMBINATOR_PROXY
+is set. A 403/429 (or HTML where JSON is expected) drops the worker's session,
+so the next call opens on a fresh exit; a configured fallback proxy is used
+for config.YCOMBINATOR_BLOCK_COOLDOWN seconds. The headful patchright
+browser is deliberately NOT built: there is no challenge to clear.
 
 Failure taxonomy (scraper_errors, mapped to HTTP by route_glue):
   YCUpstreamError  transport failure / 5xx                 — retryable
@@ -117,11 +120,18 @@ _fallback_lock = threading.Lock()
 
 
 def _proxy_for_new_session():
+    """The exit for a new session. Raises when the config requires a proxy
+    and none is available (never falls back to the server's own IP)."""
     forced = config.ycombinator_proxy()
     if forced:
         return forced
     if time.time() < _fallback_until:
-        return config.ycombinator_fallback_proxy()
+        fallback = config.ycombinator_fallback_proxy()
+        if fallback:
+            return fallback
+    if getattr(config, "YCOMBINATOR_REQUIRE_PROXY", False):
+        raise YCUpstreamError("no Y Combinator proxy configured "
+                              "(ycombinator.com is never contacted from the server's IP)")
     return None
 
 
@@ -148,13 +158,35 @@ def _drop_session():
 
 
 def _note_block(where):
-    """A 403/429: new sessions leave through the fallback exit for a while."""
+    """A 403/429: drop the session (the next one opens on a fresh exit) and
+    use the fallback proxy, if one is configured, for a while."""
     global _fallback_until
     with _fallback_lock:
         _fallback_until = time.time() + config.YCOMBINATOR_BLOCK_COOLDOWN
     _drop_session()
-    print(f"ycombinator: blocked on {where}; sessions move to the fallback exit "
-          f"for {config.YCOMBINATOR_BLOCK_COOLDOWN}s")
+    print(f"ycombinator: blocked on {where}; the next session opens on a fresh exit")
+
+
+def _attempts():
+    return max(1, int(getattr(config, "YCOMBINATOR_MAX_ATTEMPTS", 3)))
+
+
+def with_retries(fn, label):
+    """Run fn() up to YCOMBINATOR_MAX_ATTEMPTS times. A transport failure, a
+    block or a 5xx drops the thread's session so the next attempt opens on a
+    fresh proxy exit; NotFound / BadRequest are final and never retried."""
+    attempts = _attempts()
+    for attempt in range(1, attempts + 1):
+        try:
+            return fn()
+        except (YCNotFound, YCBadRequest):
+            raise
+        except YCUpstreamError as e:
+            if attempt == attempts:
+                raise
+            _drop_session()
+            print(f"ycombinator: {label}: attempt {attempt}/{attempts} failed ({e}); retrying on a fresh exit")
+            time.sleep(0.5 * attempt)
 
 
 def dump_debug(name, text):
@@ -202,21 +234,25 @@ def _request(method, url, params=None, headers=None, data=None, timeout=TIMEOUT,
 
 def get_page(url, params=None, label=None, timeout=TIMEOUT):
     """A page's HTML -> (text, final url)."""
-    resp = _request("GET", url, params=params, headers=PAGE_HEADERS, timeout=timeout, label=label)
-    text = resp.text or ""
-    if "<html" not in text[:2000].lower() and "<!doctype" not in text[:200].lower():
-        dump_debug("nonhtml", text)
-        raise YCBlocked(f"{label or url}: non-HTML answer where a page was expected")
-    return text, str(resp.url)
+    def once():
+        resp = _request("GET", url, params=params, headers=PAGE_HEADERS, timeout=timeout, label=label)
+        text = resp.text or ""
+        if "<html" not in text[:2000].lower() and "<!doctype" not in text[:200].lower():
+            dump_debug("nonhtml", text)
+            raise YCBlocked(f"{label or url}: non-HTML answer where a page was expected")
+        return text, str(resp.url)
+    return with_retries(once, label or url)
 
 
 def get_json(url, params=None, label=None, headers=None, timeout=TIMEOUT):
-    resp = _request("GET", url, params=params, headers=headers or JSON_HEADERS, timeout=timeout, label=label)
-    try:
-        return resp.json()
-    except Exception:
-        dump_debug("nonjson", resp.text)
-        raise YCBlocked(f"{label or url}: non-JSON answer where JSON was expected")
+    def once():
+        resp = _request("GET", url, params=params, headers=headers or JSON_HEADERS, timeout=timeout, label=label)
+        try:
+            return resp.json()
+        except Exception:
+            dump_debug("nonjson", resp.text)
+            raise YCBlocked(f"{label or url}: non-JSON answer where JSON was expected")
+    return with_retries(once, label or url)
 
 
 # ---- Inertia pages -----------------------------------------------------------------
@@ -315,6 +351,10 @@ def algolia_search(index, params, kind="companies"):
     """One Algolia query -> the result block ({hits, nbHits, page, nbPages,
     hitsPerPage, facets?}). `params` is the dict of Algolia search params
     (query, hitsPerPage, page, facetFilters, numericFilters, facets…)."""
+    return with_retries(lambda: _algolia_search_once(index, params, kind), f"algolia {index}")
+
+
+def _algolia_search_once(index, params, kind):
     encoded = urlencode({k: (json.dumps(v, separators=(",", ":")) if isinstance(v, (list, dict)) else v)
                          for k, v in params.items()}, quote_via=quote)
     body = json.dumps({"requests": [{"indexName": index, "params": encoded}]})

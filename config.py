@@ -20,8 +20,10 @@ RETRY_BACKOFF = 2          # seconds, multiplied by the attempt number
 
 YCOMBINATOR_PROXY = os.environ.get("YCOMBINATOR_PROXY") or None
 
-# After a 403 / 429, new sessions switch to the fallback proxy for this long.
-YCOMBINATOR_BLOCK_COOLDOWN = 900
+# Names the ycombinator package reads.
+YCOMBINATOR_REQUIRE_PROXY = False          # no YCOMBINATOR_PROXY set -> connect directly from this machine
+YCOMBINATOR_MAX_ATTEMPTS = MAX_RETRIES     # tries per upstream call; each failure opens a fresh session
+YCOMBINATOR_BLOCK_COOLDOWN = 900           # after a 403 / 429, how long the fallback proxy (if any) is used
 
 
 def ycombinator_proxy():
