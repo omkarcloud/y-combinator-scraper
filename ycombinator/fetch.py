@@ -33,8 +33,12 @@ Surfaces (all public, all read without a session):
               — the bare request answers 406); the directories behind them
               redirect to login and are not used.
 
-Egress: in grow every session leaves through a sticky residential proxy exit
-(config.ycombinator_proxy, YCOMBINATOR_REQUIRE_PROXY) — ycombinator.com and
+Egress: in grow every session leaves through the exit config.ycombinator_proxy
+names (YCOMBINATOR_REQUIRE_PROXY): the shared gateway exit since 2026-11-11
+(knob YCOMBINATOR_EXIT = "gateway": a fresh gateway address per request; a call's
+last retry, and the rest of a call the gateway itself failed, on the sticky
+residential exit), with YCOMBINATOR_EXIT = None a sticky residential proxy
+exit — ycombinator.com and
 workatastartup.com are never contacted from the server's own IP; with no
 proxy the call fails instead of going direct. The open-source kit sets
 YCOMBINATOR_REQUIRE_PROXY = False, so it runs direct unless YCOMBINATOR_PROXY
@@ -52,18 +56,22 @@ Failure taxonomy (scraper_errors, mapped to HTTP by route_glue):
 import base64
 import html as html_lib
 import json
+import fastjson
 import os
 import re
 import sys
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
-from urllib.parse import quote, urlencode
+from urllib.parse import quote, urlencode, urlsplit
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import config
+import egress
+import identity_pool
 from scraper_errors import BadRequest, Blocked, NotFound, UpstreamError
+from scraper_utils import debug, fanout, sessions
 
 YC_HOST = "https://www.ycombinator.com"
 WAAS_HOST = "https://www.workatastartup.com"
@@ -82,12 +90,12 @@ KEY_SAFETY_SECONDS = 600   # re-mint an Algolia key this long before `validUntil
 
 PAGE_HEADERS = {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "accept-language": "en-US,en;q=0.9",
+    "accept-language": egress.accept_language(),
     "upgrade-insecure-requests": "1",
 }
 JSON_HEADERS = {
     "accept": "application/json, text/plain, */*",
-    "accept-language": "en-US,en;q=0.9",
+    "accept-language": egress.accept_language(),
 }
 
 _DATA_PAGE_RE = re.compile(r'data-page="([^"]+)"')
@@ -122,7 +130,12 @@ _fallback_lock = threading.Lock()
 def _proxy_for_new_session():
     """The exit for a new session. Raises when the config requires a proxy
     and none is available (never falls back to the server's own IP)."""
-    forced = config.ycombinator_proxy()
+    if getattr(_local, "residential", False):
+        # the rest of a call whose gateway attempts failed (with_retries):
+        # the proxy exit behind the gateway
+        forced = config.ycombinator_proxy(fallback=True)
+    else:
+        forced = config.ycombinator_proxy()
     if forced:
         return forced
     if time.time() < _fallback_until:
@@ -138,23 +151,15 @@ def _proxy_for_new_session():
 def _session():
     sess = getattr(_local, "session", None)
     if sess is None:
-        from curl_cffi import requests as curl_requests
-        sess = curl_requests.Session(impersonate=IMPERSONATE)
         proxy = _proxy_for_new_session()
-        if proxy:
-            sess.proxies = {"http": proxy, "https": proxy}
+        sess = egress.new_session(proxy, impersonate=IMPERSONATE)     # a proxy URL, None, or the gateway exit ("gateway")
         _local.session = sess
+        _local.on_gateway = bool(egress.gateway_country(proxy))
     return sess
 
 
 def _drop_session():
-    sess = getattr(_local, "session", None)
-    _local.session = None
-    if sess is not None:
-        try:
-            sess.close()
-        except Exception:
-            pass
+    sessions.drop(_local)
 
 
 def _note_block(where):
@@ -171,37 +176,65 @@ def _attempts():
     return max(1, int(getattr(config, "YCOMBINATOR_MAX_ATTEMPTS", 3)))
 
 
+def _gateway_failed(error):
+    """the gateway's own failure, as _request wraps it (exit_gateway's
+    GatewayError / GatewayMissing): its 29 s limit, its 10 MB body cap
+    (/library is 7.4 MB gzipped and 6-14 s through it, 2026-11-11) or its
+    throttling. Another gateway address would meet the same limit, so only the
+    exit that can wait (TIMEOUT / LIBRARY_TIMEOUT) will do."""
+    return "request failed: Gateway" in str(error)
+
+
 def with_retries(fn, label):
     """Run fn() up to YCOMBINATOR_MAX_ATTEMPTS times. A transport failure, a
     block or a 5xx drops the thread's session so the next attempt opens on a
-    fresh proxy exit; NotFound / BadRequest are final and never retried."""
+    fresh proxy exit; NotFound / BadRequest are final and never retried.
+    With the gateway exit as the exit (config.YCOMBINATOR_EXIT) the LAST
+    attempt, and every attempt after a failure of the gateway itself (its
+    29 s timeout, its 10 MB cap), rides the proxy
+    exit (config.ycombinator_proxy(fallback=True)), so a gateway problem
+    degrades to the residential path instead of an error; the thread's next
+    call starts on the gateway again.
+    A call nested inside another (the Algolia key mint's get_page inside
+    algolia_search) runs once: the outer loop owns the retry budget, so the
+    tries do not multiply."""
+    if getattr(_local, "retrying", False):
+        return fn()
     attempts = _attempts()
-    for attempt in range(1, attempts + 1):
-        try:
-            return fn()
-        except (YCNotFound, YCBadRequest):
-            raise
-        except YCUpstreamError as e:
-            if attempt == attempts:
+    _local.retrying = True
+    try:
+        for attempt in range(1, attempts + 1):
+            try:
+                return fn()
+            except (YCNotFound, YCBadRequest):
                 raise
-            _drop_session()
-            print(f"ycombinator: {label}: attempt {attempt}/{attempts} failed ({e}); retrying on a fresh exit")
-            time.sleep(0.5 * attempt)
+            except YCUpstreamError as e:
+                if attempt == attempts:
+                    raise
+                _drop_session()
+                if getattr(_local, "on_gateway", False) and (attempt + 1 == attempts or _gateway_failed(e)):
+                    _local.residential = True
+                print(f"ycombinator: {label}: attempt {attempt}/{attempts} failed ({e}); retrying on a fresh exit")
+                time.sleep(0.5 * attempt)
+    finally:
+        _local.retrying = False
+        if getattr(_local, "residential", False):
+            _local.residential = False
+            _drop_session()             # the fallback exit served this call only
 
 
 def dump_debug(name, text):
     """Write a raw body to $YCOMBINATOR_DEBUG_DIR/<name>.txt for post-mortems."""
-    dbg = os.environ.get("YCOMBINATOR_DEBUG_DIR", "")
-    if dbg and text:
-        try:
-            os.makedirs(dbg, exist_ok=True)
-            with open(os.path.join(dbg, name + ".txt"), "w") as f:
-                f.write(text)
-        except OSError:
-            pass
+    debug.dump("YCOMBINATOR_DEBUG_DIR", name, text)
 
 
 # ---- raw requests -----------------------------------------------------------------
+
+# YC's own hosts: a redirect between them is followed on the gateway exit too
+# (_request). Never a host taken from the page (a company's website).
+_OWN_HOSTS = {"www.ycombinator.com", "www.workatastartup.com", "api.ycombinator.com", "account.ycombinator.com"}
+_REDIRECTS = (301, 302, 303, 307, 308)
+
 
 def _request(method, url, params=None, headers=None, data=None, timeout=TIMEOUT, label=None, allow_404=False):
     label = label or url
@@ -211,6 +244,17 @@ def _request(method, url, params=None, headers=None, data=None, timeout=TIMEOUT,
                                    allow_redirects=True)
         else:
             resp = _session().get(url, params=params, headers=headers, timeout=timeout, allow_redirects=True)
+        # A curl session never gets here with a redirect (it followed it). The
+        # gateway exit follows one inside a site only, and YC's two sites
+        # redirect to each other: workatastartup.com/companies/<slug> of a
+        # company with no open jobs -> ycombinator.com/companies/<slug>
+        # (2026-11-11: brex, twitch). Follow it the way curl does.
+        for _ in range(3):
+            location = resp.headers.get("location") or ""
+            if resp.status_code not in _REDIRECTS or urlsplit(location).hostname not in _OWN_HOSTS \
+                    or not location.startswith("https://"):
+                break
+            resp = _session().get(location, headers=headers, timeout=timeout, allow_redirects=True)
     except Exception as e:
         _drop_session()
         raise YCUpstreamError(f"{label}: request failed: {type(e).__name__}: {e}")
@@ -264,7 +308,7 @@ def parse_data_page(page_html, label="page"):
         dump_debug("no_data_page", page_html)
         raise YCUpstreamError(f"{label}: no Inertia data-page payload in the HTML (layout change?)")
     try:
-        return json.loads(html_lib.unescape(match.group(1)))
+        return fastjson.loads(html_lib.unescape(match.group(1)))
     except ValueError as e:
         raise YCUpstreamError(f"{label}: data-page is not JSON ({e})")
 
@@ -282,7 +326,7 @@ LIST_HEADERS = {
     # Rails content negotiation: a `*/*` in Accept gets the HTML page back,
     # a bare application/json gets the list as JSON.
     "accept": "application/json",
-    "accept-language": "en-US,en;q=0.9",
+    "accept-language": egress.accept_language(),
 }
 
 
@@ -300,10 +344,14 @@ def page_payload(path, params=None, host=YC_HOST, label=None, timeout=TIMEOUT):
 
 
 # ---- Algolia ------------------------------------------------------------------------
-
-_keys = {}
-_keys_lock = threading.Lock()
+# The secured search key per index kind (pool key = kind) lives in a shared
+# identity_pool (replaced the `_keys` dict + lock on 2026-11-09): the mint's
+# `valid_until` minus KEY_SAFETY_SECONDS is the identity's expires_at, a
+# rejection wave across the 64 request threads costs ONE mint (the other
+# threads get the winner's key), and a second forced re-mint inside
+# KEY_REFRESH_INTERVAL returns the same key, so a genuine 400 never loops.
 _KEY_PAGES = {"companies": "/companies", "founders": "/founders"}
+KEY_REFRESH_INTERVAL = 30      # seconds between two rejection-driven re-mints per kind
 
 
 def _key_valid_until(key):
@@ -315,7 +363,10 @@ def _key_valid_until(key):
     return int(match.group(1)) if match else 0
 
 
-def _mint_key(kind):
+def _mint_key(kind, hint=None):
+    """The pool's mint: the key embedded in the companies / founders page,
+    valid until its own `valid_until` (minus the safety margin). Raises
+    YCUpstreamError (or get_page's own errors)."""
     path = _KEY_PAGES[kind]
     text, _ = get_page(f"{YC_HOST}{path}", label=f"algolia key ({path})")
     match = _ALGOLIA_OPTS_RE.search(text)
@@ -323,28 +374,28 @@ def _mint_key(kind):
         dump_debug(f"no_algolia_opts_{kind}", text)
         raise YCUpstreamError(f"{path}: no AlgoliaOpts in the page (layout change?)")
     try:
-        opts = json.loads(match.group(1))
+        opts = fastjson.loads(match.group(1))
     except ValueError as e:
         raise YCUpstreamError(f"{path}: AlgoliaOpts is not JSON ({e})")
     key = opts.get("key")
     if not key or opts.get("app", ALGOLIA_APP) != ALGOLIA_APP:
         raise YCUpstreamError(f"{path}: unexpected AlgoliaOpts {str(opts)[:120]}")
     valid_until = opts.get("valid_until") or _key_valid_until(key) or int(time.time()) + 3600
-    return key, int(valid_until)
+    return identity_pool.Identity(key, expires_at=int(valid_until) - KEY_SAFETY_SECONDS)
+
+
+_keys = identity_pool.Pool("ycombinator-algolia-key", _mint_key, min_interval=KEY_REFRESH_INTERVAL)
 
 
 def algolia_key(kind="companies", force=False):
     """The secured search key for the companies or founders index, minted
-    from the page that embeds it and re-minted before it expires."""
-    now = time.time()
-    with _keys_lock:
-        cached = _keys.get(kind)
-        if cached and not force and cached[1] - KEY_SAFETY_SECONDS > now:
-            return cached[0]
-    key, valid_until = _mint_key(kind)
-    with _keys_lock:
-        _keys[kind] = (key, valid_until)
-    return key
+    from the page that embeds it and re-minted before it expires. force=True
+    (the key was just rejected) asks the pool to replace the current one:
+    one mint per wave, and inside the interval the same key comes back."""
+    ident = _keys.get(kind)
+    if force:
+        ident = _keys.get(kind, replace=ident)
+    return ident.value
 
 
 def algolia_search(index, params, kind="companies"):
@@ -358,11 +409,15 @@ def _algolia_search_once(index, params, kind):
     encoded = urlencode({k: (json.dumps(v, separators=(",", ":")) if isinstance(v, (list, dict)) else v)
                          for k, v in params.items()}, quote_via=quote)
     body = json.dumps({"requests": [{"indexName": index, "params": encoded}]})
+    key_ident = None
     for attempt in (1, 2):
-        key = algolia_key(kind, force=attempt == 2)
+        # attempt 2 replaces the key attempt 1 sent: one re-mint per rejection
+        # wave, none inside KEY_REFRESH_INTERVAL (the same key, so a genuine
+        # 400 fails below instead of minting again)
+        key_ident = _keys.get(kind, replace=key_ident if attempt == 2 else None)
         headers = {
             "x-algolia-application-id": ALGOLIA_APP,
-            "x-algolia-api-key": key,
+            "x-algolia-api-key": key_ident.value,
             "content-type": "application/json",
             "accept": "application/json",
         }
@@ -432,13 +487,7 @@ _fanout = ThreadPoolExecutor(max_workers=FANOUT_WORKERS * 3, thread_name_prefix=
 
 def run_parallel(fns):
     """Run callables concurrently (the first on this thread) -> results in order."""
-    if not fns:
-        return []
-    if len(fns) == 1:
-        return [fns[0]()]
-    futures = [_fanout.submit(fn) for fn in fns[1:]]
-    first = fns[0]()
-    return [first] + [f.result() for f in futures]
+    return fanout.on_pool_caller_first(_fanout, fns)
 
 
 def or_not_found(fn, message):
@@ -453,12 +502,7 @@ def or_not_found(fn, message):
 def soft(fn, default=None):
     """Wrap an optional lookup: any upstream failure yields `default`
     instead of failing the endpoint."""
-    def run():
-        try:
-            return fn()
-        except (UpstreamError, BadRequest, NotFound):
-            return default
-    return run
+    return fanout.soft(fn, default, (UpstreamError, BadRequest, NotFound))
 
 
 if __name__ == "__main__":

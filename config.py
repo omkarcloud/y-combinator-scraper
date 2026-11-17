@@ -26,7 +26,7 @@ YCOMBINATOR_MAX_ATTEMPTS = MAX_RETRIES     # tries per upstream call; each failu
 YCOMBINATOR_BLOCK_COOLDOWN = 900           # after a 403 / 429, how long the fallback proxy (if any) is used
 
 
-def ycombinator_proxy():
+def ycombinator_proxy(*args, **kwargs):
     """The proxy every session uses (None = direct)."""
     return os.environ.get("YCOMBINATOR_PROXY") or None
 

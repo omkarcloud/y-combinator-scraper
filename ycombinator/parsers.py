@@ -67,6 +67,8 @@ from datetime import datetime, timezone
 import html as html_lib
 
 from ycombinator import refs
+from scraper_utils.text import squashed as text
+from scraper_utils.values import bool_or_none as flag, to_int
 
 STATUS_MAP = {"active": "active", "inactive": "inactive", "acquired": "acquired", "public": "public"}
 ROLE_NAMES = {"eng": "Engineering", "design": "Design", "product": "Product", "science": "Science",
@@ -88,31 +90,12 @@ _MD_EMPH_RE = re.compile(r"(?<![\w*])[*_]([^*_\n]+)[*_](?![\w*])")
 _NEWS_DATE_FORMATS = ("%B %d, %Y", "%b %d, %Y", "%Y-%m-%d")
 
 
-# ---- text / number helpers (same behaviour as lever.parsers; inlined so the
-# package stands alone) ------------------------------------------------------------
+# ---- text / number helpers (same behaviour as lever.parsers; the generic ones
+# come from scraper_utils) ---------------------------------------------------------
 
 _TAG_RE = re.compile(r"<[^>]+>")
 _BREAK_RE = re.compile(r"<\s*(?:br\s*/?|/p|/div|/li|/h[1-6]|/tr)\s*>", re.I)
 _LI_RE = re.compile(r"<\s*li[^>]*>", re.I)
-
-
-def text(value):
-    if not isinstance(value, str):
-        return None
-    value = " ".join(value.replace("\xa0", " ").split())
-    return value or None
-
-
-def to_int(value):
-    if isinstance(value, bool):
-        return None
-    try:
-        return int(value) if value not in (None, "") else None
-    except (TypeError, ValueError):
-        try:
-            return int(float(value))
-        except (TypeError, ValueError):
-            return None
 
 
 def to_float(value):
@@ -203,18 +186,6 @@ def iso_date(value):
             return datetime.strptime(value, fmt).date().isoformat()
         except ValueError:
             continue
-    return None
-
-
-def flag(value):
-    if isinstance(value, bool):
-        return value
-    if isinstance(value, str):
-        low = value.strip().lower()
-        if low in ("true", "1", "yes"):
-            return True
-        if low in ("false", "0", "no"):
-            return False
     return None
 
 
